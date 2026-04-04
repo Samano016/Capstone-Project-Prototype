@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adulting 101</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="showHome()" style="cursor: pointer;">Adulting 101</h1>
+        <nav>
+            <button onclick="loadModule('finance')">Financial Literacy</button>
+            <button onclick="loadModule('career')">Career Exploration</button>
+            <button onclick="loadModule('digital')">Digital Citizenship</button>
+        </nav>
+    </header>
+
+    <main id="app-container">
+        
+        <section id="welcome-screen" class="welcome-container">
+            <h2 class="welcome-title">Welcome to Adulting 101</h2>
+            <p class="welcome-subtitle">Select a topic to begin learning</p>
+            
+            <div class="module-cards">
+                <div class="card card-finance" onclick="loadModule('finance')">
+                    <h3>Finance</h3>
+                    <p>Personal Budgeting & Financial Literacy</p>
+                    <button class="start-btn">Start Module</button>
+                </div>
+
+                <div class="card card-career" onclick="loadModule('career')">
+                    <h3>Career exploration</h3>
+                    <p>Job Hunting & Skill Development</p>
+                    <button class="start-btn">Start Module</button>
+                </div>
+
+                <div class="card card-digital" onclick="loadModule('digital')">
+                    <h3>Digital Citizenship</h3>
+                    <p>Online Safety & Responsibilities</p>
+                    <button class="start-btn">Start Module</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="finance-menu" class="hidden">
+            <div class="menu-header">
+                <h2 class="finance-text">Finance Topics</h2>
+                <p>Select a lesson to begin mastering your money.</p>
+            </div>
+            <div class="topic-grid">
+                <div class="topic-card" onclick="startLesson('finance_intro')">
+                    <div class="icon"></div>
+                    <h3>Intro - What is Financial Literacy?</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card" onclick="startLesson('finance_using')">
+                    <div class="icon"></div>
+                    <h3>Using Money</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card" onclick="startLesson('finance_decisions')">
+                    <div class="icon"></div>
+                    <h3>Smart Decisions</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card" onclick="startLesson('finance_earning')">
+                    <div class="icon"></div>
+                    <h3>How to Make Money</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-menu" class="hidden">
+            <div class="menu-header">
+                <h2 class="career-text">Career Exploration</h2>
+                <p>Connecting academic theory to real-world career applications.</p>
+            </div>
+            <div class="topic-grid">
+                <div class="topic-card card-career" onclick="startLesson('career_readiness')">
+                    <div class="icon"></div>
+                    <h3>Career Readiness & NACE Competencies</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card card-career" onclick="startLesson('career_soft_skills')">
+                    <div class="icon"></div>
+                    <h3>Soft Skills & Professionalism</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card card-career" onclick="startLesson('career_pathways')">
+                    <div class="icon"></div>
+                    <h3>Discovering Your Career Path</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="digital-menu" class="hidden">
+            <div class="menu-header">
+                <h2 class="digital-text">Digital Citizenship</h2>
+                <p>Learning to act responsibly and safely in the digital world.</p>
+            </div>
+            <div class="topic-grid">
+                <div class="topic-card card-digital" onclick="startLesson('digital_media_literacy')">
+                    <div class="icon"></div>
+                    <h3>Media Literacy & Fact Checking</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card card-digital" onclick="startLesson('digital_privacy')">
+                    <div class="icon"></div>
+                    <h3>Protecting Privacy & Info</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+                <div class="topic-card card-digital" onclick="startLesson('digital_bias')">
+                    <div class="icon"></div>
+                    <h3>Identifying Media Bias</h3>
+                    <button class="lesson-btn">Start Lesson</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="module-content" class="hidden">
+            <h2 id="module-title">Module Title</h2>
+            
+            <div id="lecture-section" class="lpc-stage">
+                <h3>1. Learn</h3>
+                <p id="lecture-text">Core concepts will be presented here.</p>
+                <button onclick="nextStage('practice-section')">Go to Practice</button>
+            </div>
+
+            <div id="practice-section" class="lpc-stage hidden">
+    <h3>2. Practice</h3>
+    <p id="practice-text">Scenario description goes here...</p>
+    
+    <div id="practice-options" class="options-grid"></div>
+    <div id="practice-feedback" class="feedback-box hidden"></div>
+
+    <button id="next-to-quiz" class="hidden" onclick="nextStage('quiz-section')">Take the Quiz</button>
+</div>
+
+            <div id="quiz-section" class="lpc-stage hidden">
+                <h3>3. Quiz</h3>
+                <p id="quiz-text">Assess your knowledge to track your progress.</p>
+                <div id="quiz-interaction"></div>
+                <button onclick="completeModule()">Finish Lesson</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
