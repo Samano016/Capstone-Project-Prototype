@@ -11,10 +11,40 @@ const firebaseConfig = {
 
 // Run Firebase
 firebase.initializeApp(firebaseConfig);
-
-// Shortcuts for the tools
 const auth = firebase.auth();
-const db = firebase.firestore();
+
+// Login function
+function handleLogin() {
+    const email = document.getElementById('student-email').value;
+    const pass = document.getElementById('student-pass').value;
+
+    auth.signInWithEmailAndPassword(email, pass)
+        .then((userCredential) => {
+            console.log("Welcome back:", userCredential.user.email);
+            // Hide login, show welcome
+            document.getElementById('login-screen').classList.add('hidden');
+            document.getElementById('welcome-screen').classList.remove('hidden');
+        })
+        .catch((error) => {
+            alert("Login Error: " + error.message);
+        });
+}
+
+// Sign Up function
+function handleSignUp() {
+    const email = document.getElementById('student-email').value;
+    const pass = document.getElementById('student-pass').value;
+
+    auth.createUserWithEmailAndPassword(email, pass)
+        .then((userCredential) => {
+            alert("Account created! You are now logged in.");
+            document.getElementById('login-screen').classList.add('hidden');
+            document.getElementById('welcome-screen').classList.remove('hidden');
+        })
+        .catch((error) => {
+            alert("Registration Error: " + error.message);
+        });
+}
 
 // Data variable
 let moduleData = {};
