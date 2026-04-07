@@ -10,10 +10,10 @@
     <header>
         <h1 onclick="showHome()" style="cursor: pointer;">Adulting 101</h1>
         <nav>
-            <button onclick="loadModule('finance')">Financial Literacy</button>
-            <button onclick="loadModule('career')">Career Exploration</button>
-            <button onclick="loadModule('digital')">Digital Citizenship</button>
-        </nav>
+    <button class="nav-btn" onclick="loadModule('finance')">Financial Literacy</button>
+    <button class="nav-btn" onclick="loadModule('career')">Career Exploration</button>
+    <button class="nav-btn" onclick="loadModule('digital')">Digital Citizenship</button>
+</nav>
     </header>
 
     <main id="app-container">
@@ -30,7 +30,7 @@
         </div>
     </section>
         
-        <section id="welcome-screen" class="welcome-container">
+        <section id="welcome-screen" class="welcome-container hidden">
             <h2 class="welcome-title">Welcome to Adulting 101</h2>
             <p class="welcome-subtitle">Select a topic to begin learning</p>
             
