@@ -119,8 +119,8 @@ button:hover {
 
 /* Login layout */
 #login-screen .start-btn {
-    background-color: #1abc9c; 
-    color: white;              
+    background-color: #1abc9c !important;
+    color: white !important;              
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
@@ -131,7 +131,7 @@ button:hover {
 }
 
 #login-screen .start-btn:hover {
-    background-color: #16a085; /* Shade for hover effect */
+    background-color: #16a085 !important; /* Hover effect */
 }
 
 .module-cards {
