@@ -1,0 +1,94 @@
+{
+  "finance_intro": {
+    "title": "Intro - What is Financial Literacy?",
+    "lecture": "Financial literacy is the ability to understand how money works in the world. It involves three core concepts: Inflation (rising prices), Interest (the cost of borrowing or reward for saving), and Risk (the chance of loss). Mastering these helps you avoid debt and build wealth.",
+    "practice": "Scenario: You find $100 in an old jacket and decide to hide it under your mattress for 10 years. What is the most likely outcome?",
+    "choices": [
+      {
+        "text": "The money will be worth more because it is safe.",
+        "isCorrect": false,
+        "feedback": "Actually, it will be worth less! While you still have $100, 'Inflation' means that $100 will buy fewer groceries in 10 years than it does today."
+      },
+      {
+        "text": "The money will lose purchasing power over time.",
+        "isCorrect": true,
+        "feedback": "Correct! Because of inflation, the cost of goods rises, meaning 'stagnant' money (money not earning interest) loses its value."
+      },
+      {
+        "text": "The money will stay exactly the same in value.",
+        "isCorrect": false,
+        "feedback": "Incorrect. The numerical value is $100, but its 'purchasing power'—what it can actually buy—changes as prices in the economy rise."
+      }
+    ],
+    "quiz": "Question: Which of the following best describes 'Inflation'?"
+  },
+  "finance_using": {
+    "title": "Using Money",
+    "lecture": "Successful money management starts with a budget. A popular method is the 50/30/20 rule: 50% for Needs (Rent, Utilities), 30% for Wants (Entertainment, Hobbies), and 20% for Savings and Debt repayment.",
+    "practice": "Scenario: You have $1,000 for the month. Your rent is $500, groceries are $100, and you want a new $300 gaming monitor. According to the 50/30/20 rule, what should you do?",
+    "choices": [
+      {
+        "text": "Buy the monitor now since you have $400 left after rent.",
+        "isCorrect": false,
+        "feedback": "Careful! After your $600 in 'Needs' (rent/food), you only have $400 left. Spending $300 on a 'Want' leaves only $100 for your 20% savings goal ($200)."
+      },
+      {
+        "text": "Save $200 first, then see if you can afford the monitor.",
+        "isCorrect": true,
+        "feedback": "Correct! Following the 50/30/20 rule means prioritizing your 20% savings ($200) before spending your full 'Wants' budget."
+      },
+      {
+        "text": "Pay only half the rent so you can get the monitor and save.",
+        "isCorrect": false,
+        "feedback": "Definitely not! Rent is a 'Need' and failing to pay it can lead to eviction and a ruined credit score."
+      }
+    ],
+    "quiz": "Question: In the 50/30/20 rule, what does the 20% represent?"
+  },
+  "finance_decisions": {
+    "title": "Smart Decisions",
+    "lecture": "Smart financial decisions often involve understanding 'Opportunity Cost'—the value of what you give up when you choose one option over another. It also involves 'Compound Interest,' which is interest earned on interest.",
+    "practice": "Scenario: You have $50 a month you could spend on a premium coffee subscription or put into a Roth IRA (retirement account). If you start at age 18, why is the IRA considered the 'Smarter' decision?",
+    "choices": [
+      {
+        "text": "Because coffee is bad for your health.",
+        "isCorrect": false,
+        "feedback": "While health is important, the financial reason is 'Compound Interest.' That $50/month could grow to hundreds of thousands of dollars over 40 years."
+      },
+      {
+        "text": "Because of the power of Compound Interest over 40 years.",
+        "isCorrect": true,
+        "feedback": "Correct! By starting early, your interest earns its own interest, creating a snowball effect that builds massive wealth by retirement."
+      },
+      {
+        "text": "Because the IRA gives you a higher immediate cash payout.",
+        "isCorrect": false,
+        "feedback": "Incorrect. An IRA is a long-term investment. The benefit is the long-term growth, not immediate cash."
+      }
+    ],
+    "quiz": "Question: What is 'Opportunity Cost'?"
+  },
+  "finance_earning": {
+    "title": "How to Make Money",
+    "lecture": "Earning potential is tied to 'Human Capital'—your set of skills, education, and experience. Specialized skills that are in high demand but low supply (like nursing, coding, or HVAC repair) typically command higher wages.",
+    "practice": "Scenario: You are offered two summer jobs. Job A pays $20/hr to move boxes. Job B pays $15/hr but includes a certification course in Digital Marketing. Which choice increases your long-term 'Human Capital'?",
+    "choices": [
+      {
+        "text": "Job A, because $20 is more than $15.",
+        "isCorrect": false,
+        "feedback": "Short-term, yes. But moving boxes doesn't add new skills. Job B offers a certification that could lead to a much higher-paying career later."
+      },
+      {
+        "text": "Job B, because the certification adds a specialized skill.",
+        "isCorrect": true,
+        "feedback": "Correct! Investing in your skills (Human Capital) is the most reliable way to increase your lifetime earning potential."
+      },
+      {
+        "text": "Neither, you should wait for a job that pays $25/hr.",
+        "isCorrect": false,
+        "feedback": "Waiting without building skills doesn't increase your value to employers. It's better to build Human Capital now."
+      }
+    ],
+    "quiz": "Question: Which of the following is an example of 'Human Capital'?"
+  }
+}
