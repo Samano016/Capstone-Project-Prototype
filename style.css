@@ -117,7 +117,23 @@ button:hover {
     letter-spacing: 1px;
 }
 
-/* Home Screen Layout */
+/* Login layout */
+#login-screen .start-btn {
+    background-color: #1abc9c; 
+    color: white;              
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;               /* Match input width */
+    margin-top: 10px;
+}
+
+#login-screen .start-btn:hover {
+    background-color: #16a085; /* Shade for hover effect */
+}
+
 .module-cards {
     display: flex;
     justify-content: center;
