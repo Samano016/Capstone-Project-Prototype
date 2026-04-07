@@ -214,4 +214,3 @@ auth.onAuthStateChanged((user) => {
         showHome();
     }
 });
-}
