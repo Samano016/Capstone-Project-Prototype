@@ -186,3 +186,23 @@ function checkPractice(choice) {
         nextBtn.classList.add('hidden'); // Keep the quiz hidden until correct
     }
 }
+//Disable home screen buttons until log in
+auth.onAuthStateChanged((user) => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+
+    if (user) {
+        navButtons.forEach(btn => {
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            btn.style.cursor = "pointer";
+        });
+        showHome(); 
+    } else {
+        navButtons.forEach(btn => {
+            btn.disabled = true;
+            btn.style.opacity = "0.5";
+            btn.style.cursor = "not-allowed";
+        });
+        showHome();
+    }
+});
