@@ -122,7 +122,7 @@ function populateContent(data) {
 
     // Clear old quiz options and hide the finish button
     const quizContainer = document.getElementById('quiz-interaction');
-    const finishBtn = document.querySelector('#quiz-section button'); // Grabs the finish button
+    const finishBtn = document.getElementById('finish-btn'); // Grabs the finish button
     
     if (quizContainer) {
         quizContainer.innerHTML = ''; 
@@ -149,7 +149,7 @@ function populateContent(data) {
 // Quiz Logic
 function checkQuiz(choice) {
     const feedbackBox = document.getElementById('quiz-feedback');
-    const finishBtn = document.querySelector('#quiz-section button');
+    const finishBtn = document.getElementById('finish-btn');
 
     if (!feedbackBox || !finishBtn) return;
 
