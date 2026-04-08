@@ -93,7 +93,7 @@ function startLesson(lessonKey) {
     }
 }
 
-// Fill HTML with JSON data
+// HTML and JSON data
 function populateContent(data) {
     document.getElementById('module-title').innerText = data.title;
     document.getElementById('lecture-text').innerText = data.lecture;
@@ -101,25 +101,71 @@ function populateContent(data) {
     document.getElementById('quiz-text').innerText = data.quiz;
 
     // Clear old practice options and feedback
-    const optionsContainer = document.getElementById('practice-options');
-    const feedbackBox = document.getElementById('practice-feedback');
+    const practiceContainer = document.getElementById('practice-options');
+    const practiceFeedback = document.getElementById('practice-feedback');
     const nextBtn = document.getElementById('next-to-quiz');
     
-    // Ensure these elements exist before trying to modify them
-    if (optionsContainer) optionsContainer.innerHTML = '';
-    if (feedbackBox) feedbackBox.classList.add('hidden');
+    if (practiceContainer) practiceContainer.innerHTML = '';
+    if (practiceFeedback) practiceFeedback.classList.add('hidden');
     if (nextBtn) nextBtn.classList.add('hidden');
 
-    // Create buttons for each choice provided in JSON
-    if (data.choices && optionsContainer) {
+    // Buttons for practice
+    if (data.choices && practiceContainer) {
         data.choices.forEach(choice => {
             const btn = document.createElement('button');
             btn.innerText = choice.text;
             btn.className = 'choice-btn';
-            // Arrow function to pass the choice data to the checker
             btn.onclick = () => checkPractice(choice);
-            optionsContainer.appendChild(btn);
+            practiceContainer.appendChild(btn);
         });
+    }
+
+    // Clear old quiz options and hide the finish button
+    const quizContainer = document.getElementById('quiz-interaction');
+    const finishBtn = document.querySelector('#quiz-section button'); // Grabs the finish button
+    
+    if (quizContainer) {
+        quizContainer.innerHTML = ''; 
+        // We will make a new dedicated feedback box for the quiz inside the container
+        const quizFeedback = document.createElement('div');
+        quizFeedback.id = 'quiz-feedback';
+        quizFeedback.className = 'feedback-box hidden';
+        quizContainer.appendChild(quizFeedback);
+    }
+    if (finishBtn) finishBtn.classList.add('hidden');
+
+    // Buttons for the quiz
+    if (data.quizChoices && quizContainer) {
+        data.quizChoices.forEach(choice => {
+            const btn = document.createElement('button');
+            btn.innerText = choice.text;
+            btn.className = 'choice-btn';
+            btn.onclick = () => checkQuiz(choice);
+            quizContainer.appendChild(btn);
+        });
+    }
+}
+
+// Quiz Logic
+function checkQuiz(choice) {
+    const feedbackBox = document.getElementById('quiz-feedback');
+    const finishBtn = document.querySelector('#quiz-section button');
+
+    if (!feedbackBox || !finishBtn) return;
+
+    feedbackBox.innerText = choice.feedback;
+    feedbackBox.classList.remove('hidden');
+
+    if (choice.isCorrect) {
+        feedbackBox.style.backgroundColor = "#d4edda"; // Success Green
+        feedbackBox.style.color = "#155724";
+        feedbackBox.style.borderColor = "#c3e6cb";
+        finishBtn.classList.remove('hidden'); // Reveal the "Finish Lesson" button
+    } else {
+        feedbackBox.style.backgroundColor = "#f8d7da"; // Error 
+        feedbackBox.style.color = "#721c24";
+        feedbackBox.style.borderColor = "#f5c6cb";
+        finishBtn.classList.add('hidden'); // The finish button is hidden until correct
     }
 }
 
