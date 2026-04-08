@@ -4,91 +4,159 @@
     "lecture": "Financial literacy is the ability to understand how money works in the world. It involves three core concepts: Inflation (rising prices), Interest (the cost of borrowing or reward for saving), and Risk (the chance of loss). Mastering these helps you avoid debt and build wealth.",
     "practice": "Scenario: You find $100 in an old jacket and decide to hide it under your mattress for 10 years. What is the most likely outcome?",
     "choices": [
-      {
-        "text": "The money will be worth more because it is safe.",
-        "isCorrect": false,
-        "feedback": "Actually, it will be worth less! While you still have $100, 'Inflation' means that $100 will buy fewer groceries in 10 years than it does today."
-      },
-      {
-        "text": "The money will lose purchasing power over time.",
-        "isCorrect": true,
-        "feedback": "Correct! Because of inflation, the cost of goods rises, meaning 'stagnant' money (money not earning interest) loses its value."
-      },
-      {
-        "text": "The money will stay exactly the same in value.",
-        "isCorrect": false,
-        "feedback": "Incorrect. The numerical value is $100, but its 'purchasing power'—what it can actually buy—changes as prices in the economy rise."
-      }
+      { "text": "The money will be worth more because it is safe.", "isCorrect": false, "feedback": "Actually, it will be worth less! While you still have $100, 'Inflation' means that $100 will buy fewer groceries in 10 years than it does today." },
+      { "text": "The money will lose purchasing power over time.", "isCorrect": true, "feedback": "Correct! Because of inflation, the cost of goods rises, meaning 'stagnant' money loses its value." },
+      { "text": "The money will stay exactly the same in value.", "isCorrect": false, "feedback": "Incorrect. The numerical value is $100, but its 'purchasing power' changes as prices rise." }
     ],
-    "quiz": "Question: Which of the following best describes 'Inflation'?"
+    "quiz": "Question: Which of the following best describes 'Inflation'?",
+    "quizChoices": [
+      { "text": "The reward a bank gives you for saving money.", "isCorrect": false, "feedback": "Incorrect. That describes 'Interest'." },
+      { "text": "The general increase in prices and fall in the purchasing value of money.", "isCorrect": true, "feedback": "Exactly! Inflation is why a candy bar costs more today than it did 20 years ago." },
+      { "text": "The chance that an investment will lose value.", "isCorrect": false, "feedback": "Incorrect. That is the definition of 'Risk'." }
+    ]
   },
   "finance_using": {
     "title": "Using Money",
     "lecture": "Successful money management starts with a budget. A popular method is the 50/30/20 rule: 50% for Needs (Rent, Utilities), 30% for Wants (Entertainment, Hobbies), and 20% for Savings and Debt repayment.",
     "practice": "Scenario: You have $1,000 for the month. Your rent is $500, groceries are $100, and you want a new $300 gaming monitor. According to the 50/30/20 rule, what should you do?",
     "choices": [
-      {
-        "text": "Buy the monitor now since you have $400 left after rent.",
-        "isCorrect": false,
-        "feedback": "Careful! After your $600 in 'Needs' (rent/food), you only have $400 left. Spending $300 on a 'Want' leaves only $100 for your 20% savings goal ($200)."
-      },
-      {
-        "text": "Save $200 first, then see if you can afford the monitor.",
-        "isCorrect": true,
-        "feedback": "Correct! Following the 50/30/20 rule means prioritizing your 20% savings ($200) before spending your full 'Wants' budget."
-      },
-      {
-        "text": "Pay only half the rent so you can get the monitor and save.",
-        "isCorrect": false,
-        "feedback": "Definitely not! Rent is a 'Need' and failing to pay it can lead to eviction and a ruined credit score."
-      }
+      { "text": "Buy the monitor now since you have $400 left after rent.", "isCorrect": false, "feedback": "Careful! Spending $300 on a 'Want' leaves only $100 for your 20% savings goal ($200)." },
+      { "text": "Save $200 first, then see if you can afford the monitor.", "isCorrect": true, "feedback": "Correct! Following the 50/30/20 rule means prioritizing your savings before spending your full 'Wants' budget." },
+      { "text": "Pay only half the rent so you can get the monitor and save.", "isCorrect": false, "feedback": "Definitely not! Rent is a 'Need' and failing to pay it can ruin your credit score." }
     ],
-    "quiz": "Question: In the 50/30/20 rule, what does the 20% represent?"
+    "quiz": "Question: In the 50/30/20 rule, what does the 20% represent?",
+    "quizChoices": [
+      { "text": "Wants and Entertainment", "isCorrect": false, "feedback": "Incorrect. Wants should take up roughly 30% of your budget." },
+      { "text": "Needs and Utilities", "isCorrect": false, "feedback": "Incorrect. Needs represent the largest chunk at 50%." },
+      { "text": "Savings and Debt Repayment", "isCorrect": true, "feedback": "Correct! Dedicating 20% to savings builds your financial safety net." }
+    ]
   },
   "finance_decisions": {
     "title": "Smart Decisions",
     "lecture": "Smart financial decisions often involve understanding 'Opportunity Cost'—the value of what you give up when you choose one option over another. It also involves 'Compound Interest,' which is interest earned on interest.",
     "practice": "Scenario: You have $50 a month you could spend on a premium coffee subscription or put into a Roth IRA (retirement account). If you start at age 18, why is the IRA considered the 'Smarter' decision?",
     "choices": [
-      {
-        "text": "Because coffee is bad for your health.",
-        "isCorrect": false,
-        "feedback": "While health is important, the financial reason is 'Compound Interest.' That $50/month could grow to hundreds of thousands of dollars over 40 years."
-      },
-      {
-        "text": "Because of the power of Compound Interest over 40 years.",
-        "isCorrect": true,
-        "feedback": "Correct! By starting early, your interest earns its own interest, creating a snowball effect that builds massive wealth by retirement."
-      },
-      {
-        "text": "Because the IRA gives you a higher immediate cash payout.",
-        "isCorrect": false,
-        "feedback": "Incorrect. An IRA is a long-term investment. The benefit is the long-term growth, not immediate cash."
-      }
+      { "text": "Because coffee is bad for your health.", "isCorrect": false, "feedback": "While health is important, the financial reason is 'Compound Interest.'" },
+      { "text": "Because of the power of Compound Interest over 40 years.", "isCorrect": true, "feedback": "Correct! By starting early, your interest earns its own interest, creating a snowball effect." },
+      { "text": "Because the IRA gives you a higher immediate cash payout.", "isCorrect": false, "feedback": "Incorrect. An IRA is a long-term investment. The benefit is long-term growth, not immediate cash." }
     ],
-    "quiz": "Question: What is 'Opportunity Cost'?"
+    "quiz": "Question: What is 'Opportunity Cost'?",
+    "quizChoices": [
+      { "text": "The monetary price tag on an item in a store.", "isCorrect": false, "feedback": "Incorrect. Opportunity cost is about choices, not just retail prices." },
+      { "text": "The value of the next best alternative you give up when making a choice.", "isCorrect": true, "feedback": "Spot on! If you choose to study for an hour instead of working, your opportunity cost is the hourly wage you gave up." },
+      { "text": "A fee charged by banks for missing a payment.", "isCorrect": false, "feedback": "Incorrect. That is a late fee or penalty." }
+    ]
   },
   "finance_earning": {
     "title": "How to Make Money",
-    "lecture": "Earning potential is tied to 'Human Capital'—your set of skills, education, and experience. Specialized skills that are in high demand but low supply (like nursing, coding, or HVAC repair) typically command higher wages.",
+    "lecture": "Earning potential is tied to 'Human Capital'—your set of skills, education, and experience. Specialized skills that are in high demand but low supply typically command higher wages.",
     "practice": "Scenario: You are offered two summer jobs. Job A pays $20/hr to move boxes. Job B pays $15/hr but includes a certification course in Digital Marketing. Which choice increases your long-term 'Human Capital'?",
     "choices": [
-      {
-        "text": "Job A, because $20 is more than $15.",
-        "isCorrect": false,
-        "feedback": "Short-term, yes. But moving boxes doesn't add new skills. Job B offers a certification that could lead to a much higher-paying career later."
-      },
-      {
-        "text": "Job B, because the certification adds a specialized skill.",
-        "isCorrect": true,
-        "feedback": "Correct! Investing in your skills (Human Capital) is the most reliable way to increase your lifetime earning potential."
-      },
-      {
-        "text": "Neither, you should wait for a job that pays $25/hr.",
-        "isCorrect": false,
-        "feedback": "Waiting without building skills doesn't increase your value to employers. It's better to build Human Capital now."
-      }
+      { "text": "Job A, because $20 is more than $15.", "isCorrect": false, "feedback": "Short-term, yes. But Job B offers a certification that could lead to a much higher-paying career later." },
+      { "text": "Job B, because the certification adds a specialized skill.", "isCorrect": true, "feedback": "Correct! Investing in your skills is the most reliable way to increase your lifetime earning potential." },
+      { "text": "Neither, you should wait for a job that pays $25/hr.", "isCorrect": false, "feedback": "Waiting without building skills doesn't increase your value to employers." }
     ],
-    "quiz": "Question: Which of the following is an example of 'Human Capital'?"
+    "quiz": "Question: Which of the following is an example of 'Human Capital'?",
+    "quizChoices": [
+      { "text": "The cash you have stored in your wallet.", "isCorrect": false, "feedback": "Incorrect. That is financial capital." },
+      { "text": "A bilingual employee's ability to speak both English and Spanish.", "isCorrect": true, "feedback": "Exactly! Skills, education, and languages are prime examples of human capital." },
+      { "text": "The computers and machinery owned by a company.", "isCorrect": false, "feedback": "Incorrect. Those are physical assets or physical capital." }
+    ]
+  },
+  "career_readiness": {
+    "title": "Career Readiness & NACE Competencies",
+    "lecture": "Career readiness is the foundation for a successful transition into the workplace. Employers look for core competencies like Critical Thinking, Communication, Teamwork, and Professionalism.",
+    "practice": "Scenario: Your boss asks you to solve a problem with a difficult customer, but doesn't give you exact step-by-step instructions. How do you apply 'Critical Thinking'?",
+    "choices": [
+      { "text": "Wait for the boss to tell you exactly what to do.", "isCorrect": false, "feedback": "Incorrect. Employers value initiative." },
+      { "text": "Tell the customer you can't help them.", "isCorrect": false, "feedback": "Incorrect. This is unprofessional and fails to resolve the issue." },
+      { "text": "Analyze the issue, brainstorm solutions, and present the best one to your boss.", "isCorrect": true, "feedback": "Correct! Critical thinking involves analyzing a situation independently and formulating a logical solution." }
+    ],
+    "quiz": "Question: Which of the following is considered a core career readiness competency?",
+    "quizChoices": [
+      { "text": "Having the most expensive professional wardrobe.", "isCorrect": false, "feedback": "Incorrect. Professionalism is about behavior and reliability, not just expensive clothes." },
+      { "text": "Effective Communication.", "isCorrect": true, "feedback": "Yes! The ability to clearly articulate thoughts in written and oral forms is highly sought after by employers." },
+      { "text": "Never asking questions on the job.", "isCorrect": false, "feedback": "Incorrect. Asking clarifying questions is a sign of engagement and good communication." }
+    ]
+  },
+  "career_soft_skills": {
+    "title": "Soft Skills & Professionalism",
+    "lecture": "Hard skills are specific technical abilities (like coding or cooking), but 'Soft Skills' are interpersonal attributes (like time management, adaptability, and emotional intelligence). Professionalism combines these skills with reliability.",
+    "practice": "Scenario: You make a mistake on a group project that costs your team points. What is the most professional way to handle it?",
+    "choices": [
+      { "text": "Blame the instructions for being confusing.", "isCorrect": false, "feedback": "Incorrect. Deflecting blame shows a lack of accountability." },
+      { "text": "Own up to the mistake, apologize, and offer a plan to fix it.", "isCorrect": true, "feedback": "Correct! Taking responsibility demonstrates high emotional intelligence and professionalism." },
+      { "text": "Ignore it and hope no one notices.", "isCorrect": false, "feedback": "Incorrect. Ignoring mistakes breaks trust within a team." }
+    ],
+    "quiz": "Question: Which of the following is an example of a 'Soft Skill'?",
+    "quizChoices": [
+      { "text": "Writing code in HTML and CSS.", "isCorrect": false, "feedback": "Incorrect. Coding is a technical 'Hard Skill'." },
+      { "text": "Changing the oil in a 2018 vehicle.", "isCorrect": false, "feedback": "Incorrect. Mechanical knowledge is a 'Hard Skill'." },
+      { "text": "Adaptability in a fast-changing work environment.", "isCorrect": true, "feedback": "Perfect! Adaptability, communication, and leadership are all crucial soft skills." }
+    ]
+  },
+  "career_pathways": {
+    "title": "Discovering Your Career Path",
+    "lecture": "Choosing a career path involves aligning your interests, strengths, and values with market demand. It is completely normal to change careers multiple times. Networking, internships, and informational interviews are great ways to explore.",
+    "practice": "Scenario: You are interested in graphic design but aren't sure if you want to do it for a living. What is the best next step?",
+    "choices": [
+      { "text": "Give up because you don't have professional experience yet.", "isCorrect": false, "feedback": "Incorrect. Everyone starts with zero experience!" },
+      { "text": "Take out a large loan for an art degree immediately.", "isCorrect": false, "feedback": "Incorrect. It is risky to make a massive financial commitment before you even know if you enjoy the work." },
+      { "text": "Ask a professional designer for a 15-minute informational interview.", "isCorrect": true, "feedback": "Correct! Informational interviews allow you to ask questions about the reality of a job before committing to it." }
+    ],
+    "quiz": "Question: What is the primary purpose of an informational interview?",
+    "quizChoices": [
+      { "text": "To demand that a company hire you immediately.", "isCorrect": false, "feedback": "Incorrect. That approach is too aggressive and misses the point of learning." },
+      { "text": "To learn about a specific career field from someone currently working in it.", "isCorrect": true, "feedback": "Exactly! It's a low-pressure way to gather real-world insights and expand your network." },
+      { "text": "To practice negotiating a salary.", "isCorrect": false, "feedback": "Incorrect. You are not interviewing for an open position during an informational interview." }
+    ]
+  },
+  "digital_media_literacy": {
+    "title": "Media Literacy & Fact Checking",
+    "lecture": "Media literacy is the ability to critically evaluate the information you consume online. It involves checking sources, recognizing clickbait, and cross-referencing facts with reliable organizations before sharing.",
+    "practice": "Scenario: You see a viral social media post claiming that a new law will ban all video games next month. What should you do before sharing it?",
+    "choices": [
+      { "text": "Share it immediately so your friends are warned.", "isCorrect": false, "feedback": "Incorrect. Sharing unverified information contributes to the spread of misinformation." },
+      { "text": "Search for the claim on reputable news sites or fact-checking websites.", "isCorrect": true, "feedback": "Correct! Always verify sensational claims through trusted sources before sharing." },
+      { "text": "Comment angrily on the post.", "isCorrect": false, "feedback": "Incorrect. Engaging with the post pushes the content to more people." }
+    ],
+    "quiz": "Question: What does it mean to cross-reference a fact?",
+    "quizChoices": [
+      { "text": "Only reading the headline before sharing an article.", "isCorrect": false, "feedback": "Incorrect. Headlines are often misleading clickbait." },
+      { "text": "Checking multiple, independent sources to verify if a claim is actually true.", "isCorrect": true, "feedback": "Correct! If three different reliable sources report the same facts, it is much more likely to be accurate." },
+      { "text": "Deleting an article if you disagree with it.", "isCorrect": false, "feedback": "Incorrect. That is censorship, not fact-checking." }
+    ]
+  },
+  "digital_privacy": {
+    "title": "Protecting Privacy & Info",
+    "lecture": "Your 'digital footprint' is the trail of data you leave behind online. Protecting your privacy involves using strong, unique passwords, enabling Two-Factor Authentication (2FA), and being cautious about what personal details you share publicly.",
+    "practice": "Scenario: You are creating an account on a new social media app. It asks for your full name, phone number, home address, and school. How should you proceed?",
+    "choices": [
+      { "text": "Fill out everything so people can find you easily.", "isCorrect": false, "feedback": "Incorrect. Providing excessive personal information makes you vulnerable to identity theft." },
+      { "text": "Use your bank password so you don't forget it.", "isCorrect": false, "feedback": "Incorrect. Never reuse passwords! If the app gets hacked, your bank is at risk." },
+      { "text": "Provide only the required fields and keep your profile set to private.", "isCorrect": true, "feedback": "Correct! Minimizing the data you share limits your digital footprint." }
+    ],
+    "quiz": "Question: What is the primary benefit of Two-Factor Authentication (2FA)?",
+    "quizChoices": [
+      { "text": "It requires a second form of verification (like a text code) making it much harder for hackers to access your account.", "isCorrect": true, "feedback": "Yes! Even if a hacker guesses your password, they still can't get in without your physical phone." },
+      { "text": "It makes your internet connection run twice as fast.", "isCorrect": false, "feedback": "Incorrect. 2FA is for security, not speed." },
+      { "text": "It stops all spam emails from reaching your inbox.", "isCorrect": false, "feedback": "Incorrect. Spam filters handle that, not 2FA." }
+    ]
+  },
+  "digital_bias": {
+    "title": "Identifying Media Bias",
+    "lecture": "Bias is a disproportionate weight in favor of or against an idea. Algorithms on social media create 'filter bubbles' by showing you content that confirms your existing beliefs. Recognizing this helps you seek out diverse perspectives.",
+    "practice": "Scenario: You notice your social media feed only shows news articles that support your favorite sports team and mocks the rival team. What is happening?",
+    "choices": [
+      { "text": "The algorithm has created a filter bubble based on your past clicks and likes.", "isCorrect": true, "feedback": "Correct! Social media platforms are designed to keep you engaged by feeding you information you already agree with." },
+      { "text": "Everyone in the world suddenly agrees with you.", "isCorrect": false, "feedback": "Incorrect. Your feed is just curating a very specific slice of the internet." },
+      { "text": "The rival team has stopped generating any news.", "isCorrect": false, "feedback": "Incorrect. The news exists, but the algorithm is choosing not to show it to you." }
+    ],
+    "quiz": "Question: What is a 'filter bubble' in the context of social media?",
+    "quizChoices": [
+      { "text": "A physical screen protector that prevents glare on your phone.", "isCorrect": false, "feedback": "Incorrect. That is a hardware accessory." },
+      { "text": "A feature that automatically deletes offensive comments.", "isCorrect": false, "feedback": "Incorrect. That is a moderation tool." },
+      { "text": "A state of intellectual isolation resulting from algorithms serving you only information you already agree with.", "isCorrect": true, "feedback": "Exactly! Escaping the bubble requires actively searching for different viewpoints." }
+    ]
   }
 }
