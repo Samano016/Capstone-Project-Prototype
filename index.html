@@ -96,8 +96,15 @@
                     <p>Needs: $<span id="needs-val">0</span> | Wants: $<span id="wants-val">0</span> | Savings: $<span id="savings-val">0</span></p>
                 </div>
             </div>
-
-            <div class="tool-card">
+    <div class="tool-card">
+    <h4>Cost in Work-Hours</h4>
+    <input type="number" id="item-cost" placeholder="Item Price ($)" oninput="calculateHours()">
+    <input type="number" id="hourly-wage" placeholder="Hourly Wage ($)" oninput="calculateHours()">
+    <div class="results-display">
+                    <p>Work needed: <strong><span id="hours-needed">0</span> hours</strong></p>
+                </div>
+    </div>
+<div class="tool-card">
     <h4>Savings Simulator</h4>
     <input type="number" id="compound-principal" placeholder="Start Balance ($)" oninput="calculateCompound()">
     <input type="number" id="compound-monthly" placeholder="Monthly Add ($)" oninput="calculateCompound()">
