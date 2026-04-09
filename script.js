@@ -212,9 +212,9 @@ function calculateCompound() {
     const P = parseFloat(document.getElementById('compound-principal').value) || 0;
     const PMT = parseFloat(document.getElementById('compound-monthly').value) || 0;
     const t = parseFloat(document.getElementById('compound-years').value) || 0;
-    const r = 0.07; 
-    const n = 12;   
-
+    const r = 0.07; // 7% annual return
+    const n = 12;   // Monthly compounding
+    
     if (t > 0) {
         const principalGrowth = P * Math.pow(1 + r/n, n * t);
         const seriesGrowth = PMT * (Math.pow(1 + r/n, n * t) - 1) / (r/n);
