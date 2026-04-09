@@ -183,6 +183,36 @@ function resetStages() {
     document.getElementById('lecture-section').classList.remove('hidden');
 }
 
+// Finance Tools
+// 50/30/20 Budget Logic
+function calculateBudget() {
+    const income = document.getElementById('budget-input').value;
+    if (income > 0) {
+        document.getElementById('needs-val').innerText = (income * 0.50).toLocaleString();
+        document.getElementById('wants-val').innerText = (income * 0.30).toLocaleString();
+        document.getElementById('savings-val').innerText = (income * 0.20).toLocaleString();
+    }
+}
+
+// Work Hours 
+function calculateHours() {
+    const cost = document.getElementById('item-cost').value;
+    const wage = document.getElementById('hourly-wage').value;
+    
+    if (cost > 0 && wage > 0) {
+        // We assume 15% goes to taxes for realism
+        const netWage = wage * 0.85; 
+        const hours = (cost / netWage).toFixed(1);
+        document.getElementById('hours-needed').innerText = hours;
+    }
+}
+
+// Career Exploration Tools
+
+
+// Digital Citizenship Tools
+
+
 // Return to Sub-Menu 
 function completeModule() {
     alert("Lesson completed! Your progress will be saved.");
@@ -256,27 +286,3 @@ auth.onAuthStateChanged((user) => {
         showHome();
     }
 });
-
-// Finance Tools
-Budget Logic
-function calculateBudget() {
-    const income = document.getElementById('budget-input').value;
-    if (income > 0) {
-        document.getElementById('needs-val').innerText = (income * 0.50).toLocaleString();
-        document.getElementById('wants-val').innerText = (income * 0.30).toLocaleString();
-        document.getElementById('savings-val').innerText = (income * 0.20).toLocaleString();
-    }
-}
-
-// Work Hours 
-function calculateHours() {
-    const cost = document.getElementById('item-cost').value;
-    const wage = document.getElementById('hourly-wage').value;
-    
-    if (cost > 0 && wage > 0) {
-        // We assume 15% goes to taxes
-        const netWage = wage * 0.85; 
-        const hours = (cost / netWage).toFixed(1);
-        document.getElementById('hours-needed').innerText = hours;
-    }
-}
