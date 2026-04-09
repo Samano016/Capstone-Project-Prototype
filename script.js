@@ -207,6 +207,22 @@ function calculateHours() {
     }
 }
 
+// Compound Interest Calculator
+function calculateCompound() {
+    const P = parseFloat(document.getElementById('compound-principal').value) || 0;
+    const PMT = parseFloat(document.getElementById('compound-monthly').value) || 0;
+    const t = parseFloat(document.getElementById('compound-years').value) || 0;
+    const r = 0.07; 
+    const n = 12;   
+
+    if (t > 0) {
+        const principalGrowth = P * Math.pow(1 + r/n, n * t);
+        const seriesGrowth = PMT * (Math.pow(1 + r/n, n * t) - 1) / (r/n);
+        const total = principalGrowth + seriesGrowth;
+        document.getElementById('compound-total').innerText = Math.round(total).toLocaleString();
+    }
+}
+
 // Career Exploration Tools
 
 
