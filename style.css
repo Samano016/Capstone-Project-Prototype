@@ -256,24 +256,32 @@ button:hover {
 
 .tool-card {
     flex: 1;
-    min-width: 280px; /* Cards won't get too skinny */
-    max-width: 350px;
-    background: white;
+    min-width: 280px;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 12px; 
+    border-top: 5px solid #2e7d32; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
+.tool-card h4 {
+    color: #2e7d32;
+    margin-top: 0;
+
 .tool-card input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .results-display {
     margin-top: 15px;
-    padding-top: 10px;
-    border-top: 2px dashed #eee;
+    padding: 10px;
+    background: #e8f5e9; /* Light mint green */
+    border-radius: 6px;
+    font-weight: bold;
+    color: #1b5e20;
 }
