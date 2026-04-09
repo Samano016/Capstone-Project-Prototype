@@ -223,6 +223,26 @@ function calculateCompound() {
     }
 }
 
+//Loan Calculator
+function calculateLoan() {
+    const P = parseFloat(document.getElementById('loan-amount').value) || 0;
+    const annualRate = parseFloat(document.getElementById('loan-rate').value) || 0;
+    const t = parseFloat(document.getElementById('loan-years').value) || 0;
+
+    if (P > 0 && annualRate > 0 && t > 0) {
+        const r = (annualRate / 100) / 12; // Monthly interest rate
+        const n = t * 12; // Total number of payments
+
+        // repayment Formula
+        const x = Math.pow(1 + r, n);
+        const monthly = (P * x * r) / (x - 1);
+
+        document.getElementById('monthly-payment').innerText = monthly.toFixed(2).toLocaleString();
+    } else {
+        document.getElementById('monthly-payment').innerText = "0";
+    }
+}
+
 // Career Exploration Tools
 
 
