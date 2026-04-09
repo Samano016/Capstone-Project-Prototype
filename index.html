@@ -157,8 +157,52 @@
                     <button class="lesson-btn">Start Lesson</button>
                 </div>
             </div>
-        </section>
+            <div class="tool-container">
 
+    <div class="tool-card" style="max-width: 100%;"> 
+        <h4 style="color: #2980b9;">Resume "Before & After"</h4>
+        <p class="tool-desc">Click the 3 "Red Flags" in this messy resume to unlock the professional Level 100 version!</p>
+        
+        <div id="bad-resume" class="resume-box">
+            <p><strong>Email:</strong> <span class="red-flag" onclick="flagFound(this)">skaterboi99@yahoo.com</span></p>
+            <p><strong>Objective:</strong> To get a job so I can make money.</p>
+            <p><strong>Experience:</strong> I <span class="red-flag" onclick="flagFound(this)">helped out</span> at a snack bar and <span class="red-flag" onclick="flagFound(this)">did some stuff</span> for a school event.</p>
+        </div>
+
+        <div id="good-resume" class="resume-box hidden" style="border-left: 4px solid #2980b9; background: #ebf5fb;">
+            <h4 style="color: #2980b9;"> Level 100 Resume Unlocked!</h4>
+            <p><strong>Email:</strong> first.last@professional.com</p>
+            <p><strong>Objective:</strong> Dedicated student seeking to apply leadership and organizational skills in a professional setting.</p>
+            <p><strong>Experience:</strong> <strong>Managed</strong> daily operations and inventory for a school snack bar. <strong>Organized and promoted</strong> a 100th-day campus event for PPEP Tec CCLC students.</p>
+        </div>
+    </div>
+
+    <div class="tool-card">
+        <h4 style="color: #2980b9;">Workplace Scenarios</h4>
+        <p class="tool-desc">Your boss gives you feedback you disagree with. What do you do?</p>
+        
+        <button class="scenario-btn" onclick="checkScenario('A')">A) Argue your point immediately</button>
+        <button class="scenario-btn" onclick="checkScenario('B')">B) Listen and ask for clarification</button>
+        <button class="scenario-btn" onclick="checkScenario('C')">C) Ignore it and keep working</button>
+        
+        <div class="results-display hidden" id="scenario-feedback" style="background: #ebf5fb; color: #154360;"></div>
+    </div>
+
+    <div class="tool-card">
+        <h4 style="color: #2980b9;">100 Days Post-Graduation</h4>
+        <p class="tool-desc">List 3 actionable things you will do in your first 100 days as a grad.</p>
+        
+        <input type="text" id="goal1" placeholder="1. e.g., Update my resume">
+        <input type="text" id="goal2" placeholder="2. e.g., Apply for 3 jobs">
+        <input type="text" id="goal3" placeholder="3. e.g., Set up a LinkedIn profile">
+        
+        <button class="scenario-btn" onclick="saveGoals()" style="width: 100%; margin-top: 10px; background-color: #2980b9; color: white;">Commit to Goals</button>
+        
+        <div class="results-display hidden" id="goals-display" style="background: #ebf5fb; color: #154360;"></div>
+    </div>
+
+</div>
+        </section>
         <section id="digital-menu" class="hidden">
             <div class="menu-header">
                 <h2 class="digital-text">Digital Citizenship</h2>
