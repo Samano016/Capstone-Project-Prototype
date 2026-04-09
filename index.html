@@ -89,38 +89,43 @@
     <div class="tools-section">
         <h3 class="finance-text">Interactive Finance Tools</h3>
         <div class="tool-container">
-            <div class="tool-card">
-                <h4>50/30/20 Budget Calculator</h4>
-                <input type="number" id="budget-input" placeholder="Monthly Income ($)" oninput="calculateBudget()">
-                <div class="results-display">
-                    <p>Needs: $<span id="needs-val">0</span> | Wants: $<span id="wants-val">0</span> | Savings: $<span id="savings-val">0</span></p>
-                </div>
-            </div>
     <div class="tool-card">
-    <h4>Cost in Work-Hours</h4>
-    <input type="number" id="item-cost" placeholder="Item Price ($)" oninput="calculateHours()">
-    <input type="number" id="hourly-wage" placeholder="Hourly Wage ($)" oninput="calculateHours()">
-    <div class="results-display">
-                    <p>Work needed: <strong><span id="hours-needed">0</span> hours</strong></p>
-                </div>
+        <h4>50/30/20 Budget Calculator</h4>
+        <input type="number" id="budget-input" placeholder="Monthly Income ($)" oninput="calculateBudget()">
+        <div class="results-display">
+            <p>Needs: $<span id="needs-val">0</span> | Wants: $<span id="wants-val">0</span> | Savings: $<span id="savings-val">0</span></p>
+        </div>
     </div>
-<div class="tool-card">
-    <h4>Savings Simulator</h4>
-    <input type="number" id="compound-principal" placeholder="Start Balance ($)" oninput="calculateCompound()">
-    <input type="number" id="compound-monthly" placeholder="Monthly Add ($)" oninput="calculateCompound()">
-    <input type="number" id="compound-years" placeholder="Years" oninput="calculateCompound()">
-    <div class="results-display">
-        <p>Future Total: <strong>$<span id="compound-total">0</span></strong></p>
+
+    <div class="tool-card">
+        <h4>Cost in Work-Hours</h4>
+        <input type="number" id="item-cost" placeholder="Item Price ($)" oninput="calculateHours()">
+        <input type="number" id="hourly-wage" placeholder="Hourly Wage ($)" oninput="calculateHours()">
+        <div class="results-display">
+            <p>Work needed: <strong><span id="hours-needed">0</span> hours</strong></p>
+        </div>
     </div>
-</div> <div class="tool-card">
-    <h4>Loan Monthly Payment</h4>
-    <input type="number" id="loan-amount" placeholder="Loan Amount ($)" oninput="calculateLoan()">
-    <input type="number" id="loan-rate" placeholder="Interest Rate (%)" oninput="calculateLoan()">
-    <input type="number" id="loan-years" placeholder="Years" oninput="calculateLoan()">
-    <div class="results-display">
-        <p>Monthly Payment: <strong>$<span id="monthly-payment">0</span></strong></p>
+
+    <div class="tool-card">
+        <h4>Savings Simulator</h4>
+        <input type="number" id="compound-principal" placeholder="Start Balance ($)" oninput="calculateCompound()">
+        <input type="number" id="compound-monthly" placeholder="Monthly Add ($)" oninput="calculateCompound()">
+        <input type="number" id="compound-years" placeholder="Years" oninput="calculateCompound()">
+        <div class="results-display">
+            <p>Future Total: <strong>$<span id="compound-total">0</span></strong></p>
+        </div>
     </div>
-</div>                
+
+    <div class="tool-card">
+        <h4>Loan Monthly Payment</h4>
+        <input type="number" id="loan-amount" placeholder="Loan Amount ($)" oninput="calculateLoan()">
+        <input type="number" id="loan-rate" placeholder="Interest Rate (%)" oninput="calculateLoan()">
+        <input type="number" id="loan-years" placeholder="Years" oninput="calculateLoan()">
+        <div class="results-display">
+            <p>Monthly Payment: <strong>$<span id="monthly-payment">0</span></strong></p>
+        </div>
+    </div>
+</div>>                
             </div>
         </div>
     </div>
