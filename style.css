@@ -165,7 +165,7 @@ button:hover {
     margin-bottom: 1rem;
 }
 
-/* Specific Card Colors */
+/* Card Colors */
 .card-finance { background-color: #5acb4c; }
 .card-career { background-color: #d1463e; }
 .card-digital { background-color: #40b4c7; }
@@ -230,11 +230,47 @@ button:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Text Colors matching the module themes */
+/* Colors matching the module themes */
 .card-finance .start-btn, #finance-menu .lesson-btn { color: #27ae60; }
 .card-career .start-btn, #career-menu .lesson-btn { color: #d1463e; }
 .card-digital .start-btn, #digital-menu .lesson-btn { color: #40b4c7; }
 
 .start-btn:active, .lesson-btn:active {
     transform: scale(0.95);
+}
+
+/* Finance Tools */
+.tools-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f4f7f6;
+    border-radius: 12px;
+}
+
+.tool-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tool-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tool-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.results-display {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px dashed #eee;
 }
