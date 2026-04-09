@@ -68,6 +68,31 @@
                     <h3>Intro - What is Financial Literacy?</h3>
                     <button class="lesson-btn">Start Lesson</button>
                 </div>
+                <div class="tools-section">
+    <h3 class="finance-text">Interactive Finance Tools</h3>
+    <div class="tool-container">
+        <div class="tool-card">
+            <h4>50/30/20 Budget Calculator</h4>
+            <p>Enter your monthly income to see your breakdown:</p>
+            <input type="number" id="budget-input" placeholder="e.g. 2000" oninput="calculateBudget()">
+            <div id="budget-results" class="results-display">
+                <p><strong>Needs (50%):</strong> $<span id="needs-val">0</span></p>
+                <p><strong>Wants (30%):</strong> $<span id="wants-val">0</span></p>
+                <p><strong>Savings (20%):</strong> $<span id="savings-val">0</span></p>
+            </div>
+        </div>
+
+        <div class="tool-card">
+            <h4>Cost in Work-Hours</h4>
+            <p>How many hours must you work to buy that item?</p>
+            <input type="number" id="item-cost" placeholder="Item Price ($)" oninput="calculateHours()">
+            <input type="number" id="hourly-wage" placeholder="Hourly Wage ($)" oninput="calculateHours()">
+            <div id="hours-results" class="results-display">
+                <p>You need to work: <strong><span id="hours-needed">0</span> hours</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
                 <div class="topic-card" onclick="startLesson('finance_using')">
                     <div class="icon"></div>
                     <h3>Using Money</h3>
