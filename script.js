@@ -378,3 +378,27 @@ auth.onAuthStateChanged((user) => {
         showHome();
     }
 });
+
+function toggleDarkMode() {
+    const body = document.body;
+    const btn = document.getElementById('dark-mode-toggle');
+    
+    body.classList.toggle('dark-theme');
+    
+    // Save preference to localStorage
+    if (body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+        btn.innerText = "Light Mode";
+    } else {
+        localStorage.setItem('theme', 'light');
+        btn.innerText = "Dark Mode";
+    }
+}
+
+// Saved user preference when page loads
+window.onload = function() {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+        document.getElementById('dark-mode-toggle').innerText = "Light Mode";
+    }
+};
