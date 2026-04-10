@@ -231,7 +231,7 @@ button:hover {
 }
 
 /* Colors matching the module themes */
-.card-finance .start-btn, #finance-menu .lesson-btn { color: #27ae60; }
+.card- .start-btn, #-menu .lesson-btn { color: #27ae60; }
 .card-career .start-btn, #career-menu .lesson-btn { color: #d1463e; }
 .card-digital .start-btn, #digital-menu .lesson-btn { color: #40b4c7; }
 
@@ -239,7 +239,56 @@ button:hover {
     transform: scale(0.95);
 }
 
-/* Finance Tools */
+/* Finance */
+.finance-hero-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-left: 10px solid #2e7d32;
+    margin: 20px 0;
+}
+
+.hero-img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.hero-text-content {
+    flex: 1;
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h3 {
+    margin: 0 0 10px 0;
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+.fundamentals-list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.fundamentals-list li {
+    margin-bottom: 5px;
+}
+
+/* Responsive: Stack image on top of text for small screens */
+@media (max-width: 600px) {
+    .finance-hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .tools-section {
     margin-top: 40px;
     padding: 20px;
@@ -266,7 +315,7 @@ button:hover {
 }
 
 .tool-card h4 {
-    color: #ffffff;
+    color: #2e7d32;
     margin-top: 0;
 }
     
@@ -375,7 +424,7 @@ body.dark-theme .lpc-stage {
 /* Input fields */
 body.dark-theme input {
     background-color: #333 !important;
-    color: ffffff !important;
+    color: #ffffff !important;
     border: 1px solid #555 !important;
 }
 
