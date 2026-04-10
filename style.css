@@ -266,7 +266,7 @@ button:hover {
 }
 
 .tool-card h4 {
-    color: #2e7d32;
+    color: #ffffff;
     margin-top: 0;
 }
     
@@ -289,7 +289,7 @@ button:hover {
 
 .tool-desc {
     font-size: 0.9rem;
-    color: #bbb !important;
+    color: #ffffff !important;
     margin-bottom: 15px;
     line-height: 1.4;
 }
