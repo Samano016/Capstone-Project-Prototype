@@ -50,6 +50,40 @@ function handleLogout() {
     });
 }
 
+//Finance content block
+function renderFinanceFundamentals() {
+    const data = moduleData.finance_intro_data;
+    const target = document.getElementById('finance-fundamentals-target');
+    
+    // Safety check: ensure data and target exist
+    if (!data || !target) return;
+
+    let sectionsBody = "";
+    data.sections.forEach(sec => {
+        let listItems = "";
+        sec.list.forEach(item => {
+            listItems += `<li>${item}</li>`;
+        });
+
+        sectionsBody += `
+            <div class="info-block">
+                <h3>${sec.title}</h3>
+                <p>${sec.description}</p>
+                <ul class="fundamentals-list">${listItems}</ul>
+            </div>
+        `;
+    });
+
+    target.innerHTML = `
+        <div class="finance-hero-container">
+            <img src="${data.image}" class="hero-img" alt="Overview">
+            <div class="hero-text-content">
+                ${sectionsBody}
+            </div>
+        </div>
+    `;
+}
+
 // Data variable
 let moduleData = {};
 
@@ -59,6 +93,7 @@ fetch('modules.json')
     .then(data => {
         moduleData = data;
         console.log("Adulting 101 content loaded successfully.");
+      renderFinanceFundamentals();
     })
     .catch(err => console.error("Critical: Could not load module data", err));
 
