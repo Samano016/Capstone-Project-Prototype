@@ -1,4 +1,47 @@
 {
+  "finance_intro_data": {
+    "header": "Finance Fundamentals",
+    "image": "image_60837e.png",
+    "sections": [
+      {
+        "title": "1. The 'Big Three' Questions",
+        "description": "The three simple questions used worldwide to measure financial literacy. They focus on:",
+        "list": [
+          "<strong>Interest Rates:</strong> understanding how money grows in a bank account.",
+          "<strong>Inflation:</strong> knowing that as prices go up, your money buys less.",
+          "<strong>Risk:</strong> understanding that spreading money out is safer than one stock."
+        ]
+      },
+      {
+        "title": "2. The Problem: Most People are Failing",
+        "description": "Financial knowledge is surprisingly low. In the U.S., only about 30% to 40% of adults can answer all three questions correctly.",
+        "list": [
+          "<strong>Gender Gap:</strong> Women often score lower, partly due to lower confidence in their answers.",
+          "<strong>Age Gap:</strong> Knowledge peaks in the 50s; young people often have very little financial knowledge.",
+          "<strong>Inequality Gap:</strong> Minority backgrounds often have less access to info. For example, some studies show Black and Hispanic Americans scoring 10-15% lower on literacy tests due to systemic barriers."
+        ]
+      },
+      {
+        "title": "3. Why This Matters to You",
+        "description": "Lack of understanding leads to expensive mistakes, such as:",
+        "list": [
+          "Taking out student loans or credit cards you cannot afford.",
+          "Not saving enough for retirement.",
+          "Losing money on risky investments or 'get rich quick' schemes."
+        ]
+      },
+      {
+        "title": "4. Simple Solutions: Schools and Jobs",
+        "description": "Money has become more complicated, so financial literacy should be treated like reading or writing.",
+        "list": [
+          "<strong>Classes:</strong> High school personal finance classes lead to better financial decisions later in life.",
+          "<strong>Workplace Help:</strong> Employers are starting to offer wellness programs to reduce financial stress."
+        ]
+      }
+    ]
+  }
+}
+{
   "finance_intro": {
     "title": "Intro - What is Financial Literacy?",
     "lecture": "Financial literacy is the ability to understand how money works in the world. It involves three core concepts: Inflation (rising prices), Interest (the cost of borrowing or reward for saving), and Risk (the chance of loss). Mastering these helps you avoid debt and build wealth.",
