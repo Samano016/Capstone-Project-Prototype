@@ -65,7 +65,7 @@ fetch('modules.json')
 // Show the correct Sub-Menu
 function loadModule(moduleKey) {
     // Hiding all screens 
-    const screens = ['welcome-screen', 'module-content', 'finance-menu', 'career-menu', 'digital-menu'];
+    const screens = ['welcome-screen', 'module-content', 'finance-menu', 'career-menu', 'digital-menu', 'sources-menu'];
     screens.forEach(id => document.getElementById(id).classList.add('hidden'));
 
     // Show the requested sub-menu
