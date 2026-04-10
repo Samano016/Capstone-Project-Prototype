@@ -364,6 +364,14 @@ auth.onAuthStateChanged((user) => {
 
     if (user) {
         navButtons.forEach(btn => {
+
+          if (btn.id === 'dark-mode-toggle') {
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            btn.style.cursor = "pointer";
+            return; // Dark Mode will still work
+        }
+          
             btn.disabled = false;
             btn.style.opacity = "1";
             btn.style.cursor = "pointer";
