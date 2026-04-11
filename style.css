@@ -83,7 +83,7 @@ main {
 /* Action Buttons */
 button {
     background-color: #1abc9c;
-    color: 000000;
+    color: #000000;
     border: none;
     padding: 0.75rem 1.5rem;
     margin-top: 1rem;
@@ -239,7 +239,7 @@ button:hover {
     transform: scale(0.95);
 }
 
-/* Finance */
+/* Finance Content Block*/
 .finance-hero-container {
     display: flex;
     align-items: flex-start;
@@ -281,7 +281,29 @@ button:hover {
     margin-bottom: 5px;
 }
 
-/* Responsive: Stack image on top of text for small screens */
+#Career-exploration-fundamentals .finance-hero-container {
+    border-left: 10px solid #d1463e; /* Red for Career Exploration */
+}
+
+#Career-exploration-fundamentals .info-block h3 {
+    color: #d1463e; 
+}
+
+/* Image on top of text for small screens */
+@media (max-width: 600px) {
+    .finance-hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fundamentals-list {
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+/* Image on top of text for small screens */
 @media (max-width: 600px) {
     .finance-hero-container {
         flex-direction: column;
