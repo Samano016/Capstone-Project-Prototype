@@ -133,14 +133,29 @@ fetch('modules.json')
 
 // Show the correct Sub-Menu
 function loadModule(moduleKey) {
-    // Hiding all screens 
-    const screens = ['welcome-screen', 'module-content', 'finance-menu', 'career-menu', 'digital-menu', 'sources-menu'];
-    screens.forEach(id => document.getElementById(id).classList.add('hidden'));
+    // 1. Hide all screens
+    const screens = ['welcome-screen', 'module-content', 'finance-menu', 'career-menu', 'digital-menu', 'sources-menu', 'login-screen'];
+    screens.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.classList.add('hidden');
+    });
 
     // Show the requested sub-menu
     const targetId = `${moduleKey}-menu`;
-    if (document.getElementById(targetId)) {
-        document.getElementById(targetId).classList.remove('hidden');
+    const targetEl = document.getElementById(targetId);
+    
+    if (targetEl) {
+        targetEl.classList.remove('hidden');
+        
+        // Render content only when the module is on screen
+        if (moduleKey === 'finance') {
+            renderFinanceFundamentals();
+        }
+        if (moduleKey === 'career') {
+            renderCareerFundamentals();
+        }
+    } else {
+        console.error("Target menu ID not found:", targetId);
     }
 }
 
