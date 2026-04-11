@@ -58,7 +58,7 @@ function renderFinanceFundamentals() {
     // Safety check: ensure data and target exist
     if (!data || !target) return;
 
-    let sectionsBody = "";
+    let sectionsBody = ""; 
     data.sections.forEach(sec => {
         let listItems = "";
         sec.list.forEach(item => {
@@ -73,8 +73,16 @@ function renderFinanceFundamentals() {
             </div>
         `;
     });
-}
 
+    target.innerHTML = `
+        <div class="finance-hero-container">
+            <img src="${data.image}" class="hero-img" alt="Overview">
+            <div class="hero-text-content">
+                ${sectionsBody}
+            </div>
+        </div>
+    `;
+}
   //Career exploration content block
   function renderCareerFundamentals() {
     const data = moduleData.career_readiness_data;
