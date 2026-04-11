@@ -74,6 +74,30 @@ function renderFinanceFundamentals() {
         `;
     });
 
+  //Career exploration content block
+  function renderCareerFundamentals() {
+    const data = moduleData.career_readiness_data;
+    const target = document.getElementById('Career-exploration-fundamentals');
+    
+    // Safety check: ensure data and target exist
+    if (!data || !target) return;
+
+    let sectionsBody = "";
+    data.sections.forEach(sec => {
+        let listItems = "";
+        sec.list.forEach(item => {
+            listItems += `<li>${item}</li>`;
+        });
+
+        sectionsBody += `
+            <div class="info-block">
+                <h3>${sec.title}</h3>
+                <p>${sec.description}</p>
+                <ul class="fundamentals-list">${listItems}</ul>
+            </div>
+        `;
+    });
+  
     target.innerHTML = `
         <div class="finance-hero-container">
             <img src="${data.image}" class="hero-img" alt="Overview">
@@ -87,7 +111,7 @@ function renderFinanceFundamentals() {
 // Data variable
 let moduleData = {};
 
-// Fetching external content
+// Fetching content from JSON file
 fetch('modules.json')
     .then(response => response.json())
     .then(data => {
