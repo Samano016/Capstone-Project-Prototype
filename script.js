@@ -117,6 +117,32 @@ function renderFinanceFundamentals() {
     `;
 }
 
+  //Digital citizenship content block
+  function renderDigitalFundamentals() {
+    const data = moduleData.digital_citizenship_data;
+    const target = document.getElementById('digital-fundamentals-target');
+
+    if (!data || !target) return;
+
+    let sectionsBody = "";
+    data.sections.forEach(sec => {
+        let listItems = "";
+        sec.list.forEach(item => { listItems += `<li>${item}</li>`; });
+        sectionsBody += `
+            <div class="info-block">
+                <h3>${sec.title}</h3>
+                <p>${sec.description}</p>
+                <ul class="fundamentals-list">${listItems}</ul>
+            </div>`;
+    });
+
+    target.innerHTML = `
+        <div class="digital-hero-container">
+            <img src="${data.image}" class="hero-img" alt="Digital Overview">
+            <div class="hero-text-content">${sectionsBody}</div>
+        </div>`;
+}
+
 // Data variable
 let moduleData = {};
 
