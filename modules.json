@@ -290,4 +290,22 @@
       { "text": "A state of intellectual isolation resulting from algorithms serving you only information you already agree with.", "isCorrect": true, "feedback": "Exactly! Escaping the bubble requires actively searching for different viewpoints." }
     ]
   }
+},
+{
+  "digital": {
+    "title": "Digital Citizenship",
+    "description": "Learning how to act responsibly and safely in the digital world.",
+    "footprintQuiz": [
+      { "q": "Use the same password for multiple accounts?", "s": "No", "r": "Yes" },
+      { "q": "Is your main social media set to Public?", "s": "No", "r": "Yes" },
+      { "q": "Accept friend requests from strangers?", "s": "No", "r": "Yes" },
+      { "q": "Use Two-Factor Authentication (2FA)?", "s": "Yes", "r": "No" },
+      { "q": "Post photos showing your location?", "s": "No", "r": "Yes" },
+      { "q": "Click links from unknown text messages?", "s": "No", "r": "Yes" },
+      { "q": "Use public Wi-Fi for school logins?", "s": "No", "r": "Yes" },
+      { "q": "Regularly update your phone's software?", "s": "Yes", "r": "No" },
+      { "q": "Check app permissions (camera/mic)?", "s": "Yes", "r": "No" },
+      { "q": "Share your passwords with friends?", "s": "No", "r": "Yes" }
+    ]
+  }
 }
