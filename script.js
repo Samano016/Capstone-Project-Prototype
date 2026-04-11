@@ -86,7 +86,7 @@ function renderFinanceFundamentals() {
   //Career exploration content block
   function renderCareerFundamentals() {
     const data = moduleData.career_readiness_data;
-    const target = document.getElementById('Career-exploration-fundamentals');
+    const target = document.getElementById('career-exploration-fundamentals');
     
     // Safety check: ensure data and target exist
     if (!data || !target) return;
