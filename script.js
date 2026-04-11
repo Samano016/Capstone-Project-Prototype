@@ -73,6 +73,7 @@ function renderFinanceFundamentals() {
             </div>
         `;
     });
+}
 
   //Career exploration content block
   function renderCareerFundamentals() {
