@@ -30,9 +30,19 @@
           "Losing money on risky investments or 'get rich quick' schemes."
         ]
       },
+      {
+        "title": "4. Simple Solutions: Schools and Jobs",
+        "description": "Money has become more complicated, so financial literacy should be treated like reading or writing.",
+        "list": [
+          "<strong>Classes:</strong> High school personal finance classes lead to better financial decisions later in life.",
+          "<strong>Workplace Help:</strong> Employers are starting to offer wellness programs to reduce financial stress."
+        ]
+      }
+    ]
+  },
   "career_readiness_data": {
     "header": "Career Exploration",
-    "image": "career_readiness_icon.webp", 
+    "image": "career_readiness_icon.webp",
     "sections": [
       {
         "title": "1. What is Career Readiness?",
@@ -70,16 +80,6 @@
           "<strong>Measurement:</strong> It is hard to prove someone has 'leadership' or 'ethics' through a standard test.",
           "<strong>Equity Issues:</strong> Students from lower-income backgrounds often have less access to high-quality internships.",
           "<strong>Outside Factors:</strong> Economic downturns can affect job outcomes regardless of how 'ready' a student is."
-        ]
-      }
-    ]
-},
-      {
-        "title": "4. Simple Solutions: Schools and Jobs",
-        "description": "Money has become more complicated, so financial literacy should be treated like reading or writing.",
-        "list": [
-          "<strong>Classes:</strong> High school personal finance classes lead to better financial decisions later in life.",
-          "<strong>Workplace Help:</strong> Employers are starting to offer wellness programs to reduce financial stress."
         ]
       }
     ]
