@@ -108,7 +108,7 @@ function renderFinanceFundamentals() {
     });
   
     target.innerHTML = `
-        <div class="finance-hero-container">
+        <div class="career-hero-container">
             <img src="${data.image}" class="hero-img" alt="Overview">
             <div class="hero-text-content">
                 ${sectionsBody}
