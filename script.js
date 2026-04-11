@@ -178,8 +178,11 @@ function loadModule(moduleKey) {
         if (moduleKey === 'career') {
             renderCareerFundamentals();
         }
+        if (moduleKey === 'digital') {
+            renderDigitalFundamentals();
+        }
     } else {
-        console.error("Target menu ID not found:", targetId);
+        console.error("Menu ID not found:", targetId);
     }
 }
 
