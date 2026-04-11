@@ -126,8 +126,6 @@ fetch('modules.json')
     .then(data => {
         moduleData = data;
         console.log("Adulting 101 content loaded successfully.");
-      renderFinanceFundamentals();
-      renderCareerFundamentals();
     })
     .catch(err => console.error("Critical: Could not load module data", err));
 
