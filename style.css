@@ -231,7 +231,7 @@ button:hover {
 }
 
 /* Colors matching the module themes */
-.card- .start-btn, #-menu .lesson-btn { color: #27ae60; }
+.card-finance .start-btn, #finance-menu .lesson-btn { color: #27ae60; }
 .card-career .start-btn, #career-menu .lesson-btn { color: #d1463e; }
 .card-digital .start-btn, #digital-menu .lesson-btn { color: #40b4c7; }
 
@@ -239,8 +239,10 @@ button:hover {
     transform: scale(0.95);
 }
 
-/* Finance Content Block*/
-.finance-hero-container {
+/* Content Blocks*/
+.finance-hero-container,
+.career-hero-container, 
+.digital-hero-container {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -248,7 +250,6 @@ button:hover {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    border-left: 10px solid #2e7d32;
     margin: 20px 0;
 }
 
@@ -268,7 +269,6 @@ button:hover {
 
 .info-block h3 {
     margin: 0 0 10px 0;
-    color: #2e7d32;
     font-size: 1.2rem;
 }
 
@@ -281,17 +281,21 @@ button:hover {
     margin-bottom: 5px;
 }
 
-#Career-exploration-fundamentals .finance-hero-container {
-    border-left: 10px solid #d1463e; /* Red for Career Exploration */
-}
+/* Border Colors */
+.finance-hero-container { border-left: 10px solid #2e7d32; }
+.finance-hero-container h3 { color: #2e7d32; }
 
-#Career-exploration-fundamentals .info-block h3 {
-    color: #d1463e; 
-}
+.career-hero-container { border-left: 10px solid #d1463e; }
+.career-hero-container h3 { color: #d1463e; }
+
+.digital-hero-container { border-left: 10px solid #40b4c7; }
+.digital-hero-container h3 { color: #40b4c7; }
 
 /* Image on top of text for small screens */
 @media (max-width: 600px) {
-    .finance-hero-container {
+    .finance-hero-container,
+    .career-hero-container,
+    .digital-hero-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -302,15 +306,6 @@ button:hover {
         display: inline-block;
     }
 }
-
-/* Image on top of text for small screens */
-@media (max-width: 600px) {
-    .finance-hero-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .tools-section {
     margin-top: 40px;
     padding: 20px;
