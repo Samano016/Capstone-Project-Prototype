@@ -358,6 +358,64 @@ function calculateLoan() {
     }
 }
 
+//Finance Mini Game
+let portfolio = 1000;
+
+function playRoulette(riskLevel) {
+    const feedback = document.getElementById('roulette-feedback');
+    const display = document.getElementById('portfolio-value');
+    const wheel = document.getElementById('wheel-animation');
+    const resetBtn = document.getElementById('reset-roulette');
+    
+    // Spinning effect
+    wheel.style.transform = "rotate(360deg)";
+    setTimeout(() => { wheel.style.transform = "rotate(0deg)"; }, 500);
+
+    let change = 0;
+    let outcome = Math.random();
+
+    if (riskLevel === 'low') {
+        // Low Risk: 2-5% gain, 1% loss
+        change = (outcome > 0.1) ? (0.02 + Math.random() * 0.03) : -0.01;
+    } 
+    else if (riskLevel === 'med') {
+        // Med Risk: 7-12% gain, 5-10% loss
+        change = (outcome > 0.3) ? (0.07 + Math.random() * 0.05) : -(0.05 + Math.random() * 0.05);
+    } 
+    else if (riskLevel === 'high') {
+        // High Risk: 50-100% gain, 40-80% loss
+        change = (outcome > 0.6) ? (0.50 + Math.random() * 0.50) : -(0.40 + Math.random() * 0.40);
+    }
+
+    // Calculate new total
+    let result = portfolio * change;
+    portfolio += result;
+
+    // User Interface
+    if (result > 0) {
+        feedback.innerHTML = `📈 Market Up! You gained <strong>$${Math.abs(result).toFixed(2)}</strong>.`;
+        feedback.style.color = "#27ae60";
+    } else {
+        feedback.innerHTML = `📉 Market Down! You lost <strong>$${Math.abs(result).toFixed(2)}</strong>.`;
+        feedback.style.color = "#c0392b";
+    }
+
+    display.innerText = `Portfolio: $${portfolio.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+    
+    if (portfolio <= 0) {
+        feedback.innerHTML = "💀 Bankruptcy! Your portfolio hit $0.";
+        portfolio = 0;
+        resetBtn.classList.remove('hidden');
+    }
+}
+
+function resetRoulette() {
+    portfolio = 1000;
+    document.getElementById('portfolio-value').innerText = "Portfolio: $1,000.00";
+    document.getElementById('roulette-feedback').innerText = "";
+    document.getElementById('reset-roulette').classList.add('hidden');
+}
+
 // Career Exploration Tools
 // Resume Red Flags 
 let flagsFound = 0;
