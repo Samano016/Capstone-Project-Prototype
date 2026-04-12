@@ -452,13 +452,13 @@ function checkPasswordStrength() {
     if (/[^A-Za-z0-9]/.test(password)) strength++;
 
     if (strength <= 1) {
-        resultDiv.innerHTML = "🔴 Weak";
+        resultDiv.innerHTML = "🔴 Weak, try adding some special characters like numbers and symbols";
         resultDiv.style.color = "#c0392b";
     } else if (strength <= 3) {
-        resultDiv.innerHTML = "🟡 Moderate";
+        resultDiv.innerHTML = "🟡 Moderate, you are almost there!";
         resultDiv.style.color = "#b7950b";
     } else {
-        resultDiv.innerHTML = "🟢 Strong";
+        resultDiv.innerHTML = "🟢 Strong, you have a reliable password!";
         resultDiv.style.color = "#27ae60";
     }
 }
@@ -477,6 +477,23 @@ function calculateFootprint() {
     
     let message = totalScore >= 80 ? "🏆 Digital Guard!" : totalScore >= 50 ? "⚠️ Average User" : "🛑 High Risk";
     resultDiv.innerHTML = `<strong>Score: ${totalScore}/100</strong><br>${message}`;
+}
+
+//Phishing link inspector
+//Show the link
+function showLink() {
+    const reveal = document.getElementById('link-reveal');
+    if (reveal) {
+        reveal.classList.remove('hidden');
+    }
+}
+
+// Hide the link
+function hideLink() {
+    const reveal = document.getElementById('link-reveal');
+    if (reveal) {
+        reveal.classList.add('hidden');
+    }
 }
 
 // Return to Sub-Menu 
