@@ -140,10 +140,16 @@
 
     <div id="roulette-game" class="tool-card finance-theme">
     <div class="tool-header">
-        <h3>Market Risk Roulette</h3>
-        <p>Invest your <strong>$1,000</strong>. Choose a risk level to spin!</p>
+        <h3>Market Risk Roulette: Retirement Edition</h3>
+        <p>Invest your <strong>$1,000</strong>. Each spin represents 1 year of market activity.</p>
     </div>
     
+    <div class="age-control">
+        <label for="start-age">Starting Age:</label>
+        <input type="number" id="start-age" value="18" min="1" max="64" onchange="updateStartAge()">
+        <div id="current-age-display">Current Age: <strong>18</strong></div>
+    </div>
+
     <div class="roulette-visual-container">
         <div id="wheel-animation">💰</div>
         <div class="portfolio-badge">
@@ -153,15 +159,15 @@
     </div>
 
     <div class="investment-grid">
-        <button class="risk-btn low" onclick="playRoulette('low')">
+        <button id="low-btn" class="risk-btn low" onclick="playRoulette('low')">
             <strong>Low Risk</strong>
             <span>Bonds / Savings</span>
         </button>
-        <button class="risk-btn med" onclick="playRoulette('med')">
+        <button id="med-btn" class="risk-btn med" onclick="playRoulette('med')">
             <strong>Med Risk</strong>
             <span>Index Funds</span>
         </button>
-        <button class="risk-btn high" onclick="playRoulette('high')">
+        <button id="high-btn" class="risk-btn high" onclick="playRoulette('high')">
             <strong>High Risk</strong>
             <span>Crypto / Stocks</span>
         </button>
