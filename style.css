@@ -408,78 +408,85 @@ button:hover {
 }
 
 /* App permission game */
-body {
-    font-family: sans-serif;
-    background: #eef2f3;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: #eef2f3; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px; 
 }
 
-.game-container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
+.game-container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center; 
 }
 
-.permission-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    margin: 20px 0;
+h2 { 
+    color: #333; 
+    margin-top: 0; 
 }
 
-.icon {
-    font-size: 40px;
-    margin-bottom: 10px;
+#app-description { 
+    font-style: italic; 
+    color: #666; 
+    font-size: 0.9em; 
+    margin-bottom: 20px;
 }
 
-.btn-group {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 15px;
+.permission-card { 
+    background: #f8f9fa; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 2px solid #e9ecef; 
 }
 
-button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+.icon { 
+    font-size: 40px; 
+    margin-bottom: 10px; 
 }
 
-.allow-btn {
-    background: #28a745;
-    color: white;
+#permission-text {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 20px;
 }
 
-.deny-btn {
-    background: #dc3545;
-    color: white;
+.btn-group, .action-group { 
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
 }
 
-.restart-btn {
-    background: #007bff;
-    color: white;
+button { 
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 1em;
+    transition: filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.allow-btn { background: #28a745; color: white; }
+.deny-btn { background: #dc3545; color: white; }
+
+.action-btn {
     width: 100%;
     margin-top: 10px;
 }
 
-h2 {
-    color: #333;
-    margin-top: 0;
-}
-
-#app-description {
-    font-style: italic;
-    color: #666;
-    font-size: 0.9em;
-}
+.next-btn { background: #007bff; color: white; }
+.reset-btn { background: #6c757d; color: white; }
     
 /* Buttons matching your "Start Lesson" style */
 .investment-grid {
