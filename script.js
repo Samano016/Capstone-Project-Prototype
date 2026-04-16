@@ -602,6 +602,132 @@ function completeModule() {
     }
 }
 
+//Permissions App 
+const appData = [
+    {
+        name: "Flashlight Ultra HD",
+        desc: "A simple tool to turn your phone into a bright torch.",
+        permissions: [
+            { text: "Access Camera (to use the LED Flash)", necessary: true },
+            { text: "Access Contacts", necessary: false },
+            { text: "Read Text Messages", necessary: false },
+            { text: "Access GPS Location", necessary: false }
+        ]
+    },
+    {
+        name: "SocialMap Pro",
+        desc: "Find your friends on a real-time map and share photos.",
+        permissions: [
+            { text: "Access GPS Location", necessary: true },
+            { text: "Access Contacts (to find friends)", necessary: true },
+            { text: "Access Calendar", necessary: false },
+            { text: "Access Microphone", necessary: false }
+        ]
+    },
+    {
+        name: "Vintage Photo Filter",
+        desc: "Add cool 90s filters to your selfies.",
+        permissions: [
+            { text: "Access Photos & Gallery", necessary: true },
+            { text: "Access Camera", necessary: true },
+            { text: "Access GPS Location (to tag photo locations)", necessary: false }
+        ]
+    }
+];
+
+// Game State Variables
+let currentAppIndex = 0;
+let currentPermIndex = 0;
+let privacyLeaks = 0; // Leaks per app
+let totalLeaks = 0;   // Leaks across all apps
+
+function loadApp() {
+    const app = appData[currentAppIndex];
+    document.getElementById('app-name').innerText = app.name;
+    document.getElementById('app-description').innerText = app.desc;
+    
+    // Reset UI visibility for the new app
+    document.getElementById('results').style.display = "none";
+    document.getElementById('permission-card').style.display = "block";
+    
+    showPermission();
+}
+
+function showPermission() {
+    const app = appData[currentAppIndex];
+    document.getElementById('permission-text').innerText = `Allow "${app.name}" to ${app.permissions[currentPermIndex].text}?`;
+}
+
+function handlePermission(allowed) {
+    const app = appData[currentAppIndex];
+    const perm = app.permissions[currentPermIndex];
+
+    // Check if the user allowed something unnecessary
+    if (allowed && !perm.necessary) {
+        privacyLeaks++;
+        totalLeaks++;
+    }
+    
+    currentPermIndex++;
+
+    // Move to next permission or show results if done
+    if (currentPermIndex < app.permissions.length) {
+        showPermission();
+    } else {
+        showResults();
+    }
+}
+
+function showResults() {
+    document.getElementById('permission-card').style.display = "none";
+    document.getElementById('results').style.display = "block";
+    
+    if (currentAppIndex < appData.length - 1) {
+        // Results for a single app
+        document.getElementById('review-title').innerText = "App Review";
+        document.getElementById('final-score').innerText = privacyLeaks === 0 
+            ? "Perfect! You kept your data safe on this app." 
+            : `You had ${privacyLeaks} unnecessary data leaks for this app.`;
+            
+        document.getElementById('next-app-btn').style.display = "block";
+        document.getElementById('reset-game-btn').style.display = "none";
+    } else {
+        // Final Results for the whole game
+        document.getElementById('review-title').innerText = "Final Results";
+        
+        let finalMessage = "";
+        if (totalLeaks === 0) {
+            finalMessage = "🏆 Incredible! You audited all apps with ZERO data leaks. You are a Privacy Master!";
+        } else {
+            finalMessage = `⚠️ You finished auditing with a total of ${totalLeaks} unnecessary data leaks across all apps. Remember to always ask WHY an app needs your data!`;
+        }
+        
+        document.getElementById('final-score').innerText = finalMessage;
+        
+        document.getElementById('next-app-btn').style.display = "none";
+        document.getElementById('reset-game-btn').style.display = "block";
+    }
+}
+
+function nextApp() {
+    currentAppIndex++;
+    currentPermIndex = 0;
+    privacyLeaks = 0;
+    loadApp();
+}
+
+// Resets back to zero
+function restartGame() {
+    currentAppIndex = 0;
+    currentPermIndex = 0;
+    privacyLeaks = 0;
+    totalLeaks = 0;
+    loadApp();
+}
+
+// Start the game for the first time
+loadApp();
+
 // Back to Home
 function showHome() {
     // Hide every section first
