@@ -510,4 +510,84 @@
       { "text": "A state of intellectual isolation resulting from algorithms serving you only information you already agree with.", "isCorrect": true, "feedback": "Exactly! Escaping the bubble requires actively searching for different viewpoints." }
     ]
   }
+  "info_literacy": {
+    "title": "Spotting Fake News",
+    "lecture": "Not everything you read online is true. Information Literacy is the skill of checking if a website is credible (trustworthy) or just making things up. Before you believe a post or use it for a school project, you should check who wrote it and where they got their facts.",
+    "practice": "Scenario: You find an article claiming that drinking pickle juice gives you superpowers. The website has tons of pop-up ads and was written by 'Anonymous.' Should you use this for your science report?",
+    "choices": [
+      { "text": "Yes, because it’s on the Internet so it must be true.", "isCorrect": false, "feedback": "Incorrect! Anyone can make a website. You need to look for high-quality, credible sources." },
+      { "text": "No, I should check other trusted websites to see if they say the same thing.", "isCorrect": true, "feedback": "Correct! This is called 'cross-checking,' and it's a great way to see if information is accurate." },
+      { "text": "Yes, but only if the website looks fancy.", "isCorrect": false, "feedback": "Incorrect. Even a pretty website can have fake information. Always check the author and the facts." }
+    ],
+    "quiz": "Question: What is 'Information Literacy'?",
+    "quizChoices": [
+      { "text": "The ability to read really fast.", "isCorrect": false, "feedback": "Incorrect. Speed doesn't matter if the info is wrong!" },
+      { "text": "The skill of evaluating if information is accurate and trustworthy.", "isCorrect": true, "feedback": "Exactly! It's about being a smart detective when you're online." },
+      { "text": "Knowing how to turn on a computer.", "isCorrect": false, "feedback": "Incorrect. That's a basic tech skill, not information literacy." }
+    ]
+  },
+  "digital_ethics": {
+    "title": "Giving Credit Online",
+    "lecture": "Copying text from a website without saying where you got it is called plagiarism—it's basically stealing. Just like with books, you must cite (give credit to) the person who created the images or words you use online.",
+    "practice": "Scenario: You are writing an essay and find a perfect paragraph on a blog. You copy and paste it into your paper but don't mention the blog. What is this called?",
+    "choices": [
+      { "text": "Smart researching.", "isCorrect": false, "feedback": "Incorrect. If you don't give credit, it's considered academic dishonesty." },
+      { "text": "Plagiarism.", "isCorrect": true, "feedback": "Correct! Copying from a website is the same as stealing from a book. Always cite your sources!" },
+      { "text": "Creative sharing.", "isCorrect": false, "feedback": "Incorrect. You can share, but you still have to say who the original owner is." }
+    ],
+    "quiz": "Question: What should you do if you use a photo or quote from a website for a project?",
+    "quizChoices": [
+      { "text": "Nothing, if it's on Google it's free for everyone.", "isCorrect": false, "feedback": "Incorrect. Most things online are 'intellectual property' and belong to someone else." },
+      { "text": "Properly reference or cite where the information came from.", "isCorrect": true, "feedback": "Correct! This shows respect for the creator and avoids plagiarism." },
+      { "text": "Change one or two words so it's 'yours'.", "isCorrect": false, "feedback": "Incorrect. That is still considered plagiarism." }
+    ]
+  },
+  "digital_footprint": {
+    "title": "Your Digital Footprint",
+    "lecture": "Every time you post a photo, write a tweet, or even search for something, you leave a 'digital footprint.' This is a permanent trail of data that stays online forever. Even if you 'delete' a post, someone might have screenshotted it.",
+    "practice": "Scenario: You are frustrated with a teacher and post an angry comment on social media. You delete it 10 minutes later. Is it gone forever?",
+    "choices": [
+      { "text": "Yes, once it’s deleted, it’s completely erased from the internet.", "isCorrect": false, "feedback": "Incorrect. Data can be saved by others or stored on servers long after you hit delete." },
+      { "text": "No, it’s likely part of your digital footprint and could be found later.", "isCorrect": true, "feedback": "Correct! You should never assume anything is private once you post it online." },
+      { "text": "Yes, as long as your account is set to private.", "isCorrect": false, "feedback": "Incorrect. Privacy settings help, but they aren't 100% perfect." }
+    ],
+    "quiz": "Question: What makes up your 'Digital Footprint'?",
+    "quizChoices": [
+      { "text": "Only the things you intentionally post on Instagram or TikTok.", "isCorrect": false, "feedback": "Incorrect. It also includes passive things like your browsing history and IP address." },
+      { "text": "Everything you do online, including posts, searches, and cookies.", "isCorrect": true, "feedback": "Exactly! It’s the total record of your online activity." },
+      { "text": "The physical size of your phone.", "isCorrect": false, "feedback": "Incorrect. That has nothing to do with your digital data trail." }
+    ]
+  },
+  "internet_safety": {
+    "title": "Protecting Yourself Online",
+    "lecture": "Internet safety is about keeping your private info private. This means using strong passwords (not 'password123'), turning on privacy settings, and being careful about sharing things like your location or phone number.",
+    "practice": "Scenario: A new 'friend' you met in a gaming lobby asks for your phone number and the name of your school so they can 'hang out.' What should you do?",
+    "choices": [
+      { "text": "Give it to them so you can make a new friend.", "isCorrect": false, "feedback": "Incorrect. You should never give personal info to strangers online." },
+      { "text": "Tell them you don't share personal info and keep your settings private.", "isCorrect": true, "feedback": "Correct! Protecting your identity is the first rule of internet safety." },
+      { "text": "Give them a fake number just to be nice.", "isCorrect": false, "feedback": "Incorrect. It's better to just not engage and keep your info secure." }
+    ],
+    "quiz": "Question: Which of these is a 'strong' password habit?",
+    "quizChoices": [
+      { "text": "Using your birthday so you don't forget it.", "isCorrect": false, "feedback": "Incorrect. Birthdays are easy for hackers to guess." },
+      { "text": "Using a mix of letters, numbers, and symbols that aren't easy to guess.", "isCorrect": true, "feedback": "Correct! Complex passwords are much harder to hack." },
+      { "text": "Using the same password for every single account.", "isCorrect": false, "feedback": "Incorrect. If one account gets hacked, they all get hacked!" }
+    ]
+  },
+  "cyberbullying_prevention": {
+    "title": "Stopping Cyberbullying",
+    "lecture": "Cyberbullying is using technology to harass or mean to others. About 34% of students have experienced it. It’s important to speak up, report harassment, and never join in on the bullying.",
+    "practice": "Scenario: You see a group chat where everyone is making fun of a classmate and sharing embarrassing photos of them. What is the best thing to do?",
+    "choices": [
+      { "text": "Stay quiet so you don't become the next target.", "isCorrect": false, "feedback": "Incorrect. Staying quiet lets the bullying continue. Being an 'upstander' is better." },
+      { "text": "Report the behavior to a trusted adult and don't participate.", "isCorrect": true, "feedback": "Correct! Addressing it can stop the current bully and prevent future harm." },
+      { "text": "Join in so the group thinks you're cool.", "isCorrect": false, "feedback": "Incorrect. This makes you a cyberbully too and has serious consequences." }
+    ],
+    "quiz": "Question: What is 'Cyberbullying'?",
+    "quizChoices": [
+      { "text": "When your computer gets a virus.", "isCorrect": false, "feedback": "Incorrect. That's a technical issue, not a social one." },
+      { "text": "Using technology to harass, threaten, or embarrass someone else.", "isCorrect": true, "feedback": "Correct! It is a serious issue that affects many students today." },
+      { "text": "Being better at a video game than someone else.", "isCorrect": false, "feedback": "Incorrect. Competition is fine; harassment is not." }
+    ]
+  },
 }
