@@ -459,9 +459,13 @@
         </div>
 
         <div id="results" style="display:none;">
-            <h3>App Review</h3>
+            <h3 id="review-title">App Review</h3>
             <p id="final-score"></p>
-            <button class="restart-btn" onclick="nextApp()">Next App</button>
+            
+            <div class="action-group">
+                <button id="next-app-btn" class="action-btn next-btn" onclick="nextApp()">Next App</button>
+                <button id="reset-game-btn" class="action-btn reset-btn" style="display:none;" onclick="restartGame()">Play Again</button>
+            </div>
         </div>
     </div>
         </section>
