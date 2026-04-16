@@ -445,6 +445,25 @@
 
                 </div>
             </div>
+        <div class="game-container">
+        <h2 id="app-name">App Loading...</h2>
+        <p id="app-description"></p>
+        
+        <div class="permission-card" id="permission-card">
+            <div class="icon">🔒</div>
+            <p id="permission-text">Loading permission...</p>
+            <div class="btn-group">
+                <button class="deny-btn" onclick="handlePermission(false)">Deny</button>
+                <button class="allow-btn" onclick="handlePermission(true)">Allow</button>
+            </div>
+        </div>
+
+        <div id="results" style="display:none;">
+            <h3>App Review</h3>
+            <p id="final-score"></p>
+            <button class="restart-btn" onclick="nextApp()">Next App</button>
+        </div>
+    </div>
         </section>
 
         <section id="sources-menu" class="hidden">
