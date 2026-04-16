@@ -222,6 +222,86 @@
       { "text": "Never asking questions on the job.", "isCorrect": false, "feedback": "Incorrect. Asking clarifying questions is a sign of engagement and good communication." }
     ]
   },
+  "budgeting_basics": {
+    "title": "The Art of Budgeting",
+    "lecture": "A budget is a plan that allocates your future income toward expenses, savings, and debt repayment. To work, financial goals must be 'SMART': specific, realistic, and have a clear timeframe.",
+    "practice": "Scenario: You want to save $600 for a summer trip in 6 months. You earn $300 a month from a part-time job. What is the best way to budget for this?",
+    "choices": [
+      { "text": "Hope you have $600 left over by the time summer starts.", "isCorrect": false, "feedback": "Incorrect. This isn't a plan; 'hope' is not a budget." },
+      { "text": "Set aside $100 every month specifically for the trip.", "isCorrect": true, "feedback": "Correct! This is a specific, realistic goal with a clear timeframe." },
+      { "text": "Spend your whole check and put the trip on a credit card later.", "isCorrect": false, "feedback": "Incorrect. This creates debt rather than using a budget to reach a goal." }
+    ],
+    "quiz": "Question: What is a personal budget primarily designed to do?",
+    "quizChoices": [
+      { "text": "To stop you from ever spending money on fun things.", "isCorrect": false, "feedback": "Incorrect. A budget allows for fun by planning for it!" },
+      { "text": "To show you how much money your neighbors are making.", "isCorrect": false, "feedback": "Incorrect. A budget is personal and focused on your own income." },
+      { "text": "To allocate your income toward expenses and savings based on a plan.", "isCorrect": true, "feedback": "Correct! It tells your money where to go." }
+    ]
+  },
+  "banking_services": {
+    "title": "Banking & Hidden Fees",
+    "lecture": "Banks offer many services, but they also charge fees. Small, frequent costs like ATM fees can drain your savings over time. Wise banking means choosing products with the lowest costs and highest benefits.",
+    "practice": "Scenario: You use an out-of-network ATM twice a week, and each time it costs you $1. At the end of the year, you've spent over $100. If you had invested that instead, it could have grown significantly. What should you do?",
+    "choices": [
+      { "text": "Keep using the ATM because $1 doesn't seem like a lot.", "isCorrect": false, "feedback": "Incorrect. Small amounts add up to large sums over time." },
+      { "text": "Find an ATM within your bank's network to avoid the fee.", "isCorrect": true, "feedback": "Correct! Avoiding small fees is a simple way to protect your wealth." },
+      { "text": "Stop using banks entirely and keep cash in a box.", "isCorrect": false, "feedback": "Incorrect. Banks offer security and interest; you just have to use them wisely." }
+    ],
+    "quiz": "Question: If you save $2 a week by avoiding fees and invest it at 5% interest, what is the likely outcome after five years?",
+    "quizChoices": [
+      { "text": "You will have exactly $10 in total.", "isCorrect": false, "feedback": "Incorrect. You'd have much more than that." },
+      { "text": "The money would grow to over $500.", "isCorrect": true, "feedback": "Correct! Compound interest and consistency turn small savings into large amounts." },
+      { "text": "You would lose money because of inflation.", "isCorrect": false, "feedback": "Incorrect. While inflation exists, the investment growth outweighs the small fee cost." }
+    ]
+  },
+  "credit_reputation": {
+    "title": "Credit: Your Financial Reputation",
+    "lecture": "Credit is your ability to borrow money with the promise to pay it back. Using it wisely is critical to building a solid credit history. A good history makes it easier to rent apartments, buy cars, or get low-interest loans.",
+    "practice": "Scenario: You borrow money for a new laptop and miss two payments because you forgot. How does this affect your future?",
+    "choices": [
+      { "text": "It doesn't matter as long as you pay it eventually.", "isCorrect": false, "feedback": "Incorrect. Late payments are recorded in your credit history and hurt your reputation." },
+      { "text": "It makes future loans more expensive or harder to get.", "isCorrect": true, "feedback": "Correct! Lenders see missed payments as a sign of high risk." },
+      { "text": "The bank will just give you more money to help you out.", "isCorrect": false, "feedback": "Incorrect. Banks are less likely to lend to those with poor payment histories." }
+    ],
+    "quiz": "Question: What is the most critical factor in maintaining 'fiscal fitness' regarding credit?",
+    "quizChoices": [
+      { "text": "Having as many credit cards as possible.", "isCorrect": false, "feedback": "Incorrect. More cards often lead to more debt." },
+      { "text": "Using credit wisely and paying it back on time.", "isCorrect": true, "feedback": "Correct! A solid history is built on reliability." },
+      { "text": "Never using credit for anything at all.", "isCorrect": false, "feedback": "Incorrect. You need to use credit responsibly to build a history." }
+    ]
+  },
+  "car_ownership": {
+    "title": "Cars and Loans",
+    "lecture": "The cost of a car is more than just the monthly loan payment. You must also budget for 'operating costs,' including gas, insurance, and maintenance, which are often underestimated.",
+    "practice": "Scenario: You can afford a $250 monthly car payment. You find a car that fits that budget perfectly. However, you haven't checked the insurance cost yet. What is the risk?",
+    "choices": [
+      { "text": "There is no risk; the car payment is all that matters.", "isCorrect": false, "feedback": "Incorrect. Insurance and gas could double your monthly cost." },
+      { "text": "The total cost of ownership might exceed your monthly budget.", "isCorrect": true, "feedback": "Correct! You must calculate the 'real' cost, not just the loan." },
+      { "text": "You should buy the car and skip the insurance to save money.", "isCorrect": false, "feedback": "Incorrect. Insurance is legally required and financially necessary." }
+    ],
+    "quiz": "Question: What are typical 'operating costs' associated with a vehicle?",
+    "quizChoices": [
+      { "text": "Only the price of the steering wheel.", "isCorrect": false, "feedback": "Incorrect. That's part of the car's initial price." },
+      { "text": "Gas, insurance, and regular maintenance.", "isCorrect": true, "feedback": "Correct! These are ongoing costs of keeping a car on the road." },
+      { "text": "The cost of the driver's license only.", "isCorrect": false, "feedback": "Incorrect. A license is a separate personal cost." }
+    ]
+  },
+  "saving_investing": {
+    "title": "Saving and Investing",
+    "lecture": "Saving is setting money aside for the future; investing is putting that money to work to earn a return. Small amounts saved regularly can grow into large sums thanks to time and interest.",
+    "practice": "Scenario: You start saving just 35 cents a day in a jar. After one year, you have over $125. If you put that into a savings account that earns interest, what happens next?",
+    "choices": [
+      { "text": "The money will stay at $125 forever.", "isCorrect": false, "feedback": "Incorrect. Interest helps the money grow over time." },
+      { "text": "The money will grow even faster because of interest on your savings.", "isCorrect": true, "feedback": "Correct! Saving is the first step; interest is the second." },
+      { "text": "You will lose the money because the bank will spend it.", "isCorrect": false, "feedback": "Incorrect. Your savings are protected and earn you money." }
+    ],
+    "quiz": "Question: What is the first step in the saving and investing process?",
+    "quizChoices": [
+      { "text": "Waiting until you are rich to start.", "isCorrect": false, "feedback": "Incorrect. Starting early with small amounts is better." },
+      { "text": "Setting clear financial goals.", "isCorrect": true, "feedback": "Correct! You need to know what you are saving for to stay committed." },
+      { "text": "Borrowing money to invest in the stock market.", "isCorrect": false, "feedback": "Incorrect. You should save your own money first." }
+    ]
+  },
   "career_soft_skills": {
     "title": "Soft Skills & Professionalism",
     "lecture": "Hard skills are specific technical abilities (like coding or cooking), but 'Soft Skills' are interpersonal attributes (like time management, adaptability, and emotional intelligence). Professionalism combines these skills with reliability.",
