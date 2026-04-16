@@ -509,7 +509,7 @@
       { "text": "A feature that automatically deletes offensive comments.", "isCorrect": false, "feedback": "Incorrect. That is a moderation tool." },
       { "text": "A state of intellectual isolation resulting from algorithms serving you only information you already agree with.", "isCorrect": true, "feedback": "Exactly! Escaping the bubble requires actively searching for different viewpoints." }
     ]
-  }
+  },
   "info_literacy": {
     "title": "Spotting Fake News",
     "lecture": "Not everything you read online is true. Information Literacy is the skill of checking if a website is credible (trustworthy) or just making things up. Before you believe a post or use it for a school project, you should check who wrote it and where they got their facts.",
@@ -589,5 +589,5 @@
       { "text": "Using technology to harass, threaten, or embarrass someone else.", "isCorrect": true, "feedback": "Correct! It is a serious issue that affects many students today." },
       { "text": "Being better at a video game than someone else.", "isCorrect": false, "feedback": "Incorrect. Competition is fine; harassment is not." }
     ]
-  },
+  }
 }
